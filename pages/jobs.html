@@ -1,169 +1,403 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HiringAI · Postes</title>
-    <link rel="stylesheet" href="../assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="brand">
-        <span class="logo">ATS</span>
-        <div>
-          <div class="title">HiringAI</div>
-          <div class="subtitle">Mock-up</div>
-        </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HiringAI · Postes</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand brand-link" href="../index.html">
+      <span class="logo">ATS</span>
+      <div>
+        <div class="title">HiringAI</div>
+        <div class="subtitle">Mock-up</div>
       </div>
-      <nav class="topbar-actions">
-        <a class="ghost button-link" href="new-job.html">Nouveau poste</a>
-        <a class="primary button-link" href="new-candidate.html">Ajouter un candidat</a>
-      </nav>
-    </header>
+      </div>
+    </a>
+    <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+    <nav class="topbar-actions">
+      <a class="ghost button-link" href="new-job.html">Nouveau poste</a>
+      <a class="primary button-link" href="new-candidate.html">Ajouter un candidat</a>
+    </nav>
+  </header>
 
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="section-title">Navigation</div>
-        <ul class="nav">
-          <li><a class="nav-link" href="../index.html">Tableau de bord</a></li>
-          <li><a class="nav-link active" href="jobs.html">Postes</a></li>
-          <li><a class="nav-link" href="candidates.html">Candidats</a></li>
-          <li><a class="nav-link" href="pipeline.html">Pipeline</a></li>
-          <li><a class="nav-link" href="interviews.html">Entretiens</a></li>
-          <li><a class="nav-link" href="messaging.html">Messagerie</a></li>
-          <li><a class="nav-link" href="reports.html">Rapports</a></li>
-          <li><a class="nav-link" href="settings.html">Paramètres</a></li>
-          <li><a class="nav-link" href="career-settings.html">Gestion Site Carrière</a></li>
-          <li>
-            <a class="nav-link" href="../career/ewigo/index.html" target="_blank" rel="noopener">
-              Ouvrir le site carrière Ewigo
-            </a>
-          </li>
-        </ul>
-        <div class="section-title">Raccourcis</div>
-        <ul class="nav">
-          <li><a class="nav-link" href="templates.html">Modèles d'email</a></li>
-          <li><a class="nav-link" href="team.html">Team & rôles</a></li>
-          <li><a class="nav-link" href="integrations.html">Intégrations</a></li>
-        </ul>
-      </aside>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <label class="sidebar-backdrop" for="nav-toggle"></label>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="section-title">Navigation</div>
+      <ul class="nav">
+        <li><a class="nav-link" href="../index.html">Tableau de bord</a></li>
+        <li><a class="nav-link active" href="jobs.html">Postes</a></li>
+        <li><a class="nav-link" href="candidates.html">Candidats</a></li>
+        <li><a class="nav-link" href="pipeline.html">Pipeline</a></li>
+        <li><a class="nav-link" href="interviews.html">Entretiens</a></li>
+        <li><a class="nav-link" href="messaging.html">Messagerie</a></li>
+        <li><a class="nav-link" href="reports.html">Rapports</a></li>
+        <li><a class="nav-link" href="settings.html">Paramètres</a></li>
+        <li><a class="nav-link" href="career-settings.html">Gestion Site Carrière</a></li>
+        <li>
+          <a class="nav-link" href="../career/ewigo/index.html" target="_blank" rel="noopener">
+            Ouvrir le site carrière Ewigo
+          </a>
+        </li>
+      </ul>
+      <div class="section-title">Raccourcis</div>
+      <ul class="nav">
+        <li><a class="nav-link" href="templates.html">Modèles d'email</a></li>
+        <li><a class="nav-link" href="team.html">Team & rôles</a></li>
+        <li><a class="nav-link" href="integrations.html">Intégrations</a></li>
+      </ul>
+    </aside>
 
-      <main class="content">
-        <section class="hero">
-          <div>
-            <div class="breadcrumbs">Accueil · Postes</div>
-            <h1 class="page-title">Postes ouverts</h1>
-            <p class="page-description">Créez, suivez et priorisez vos besoins de recrutement.</p>
-          </div>
-          <div class="quick-actions">
-            <a class="ghost button-link" href="pipeline.html">Voir pipeline</a>
-            <a class="primary button-link" href="new-job.html">Publier un poste</a>
-          </div>
-        </section>
+    <main class="content">
+      <section class="hero">
+        <div>
+          <div class="breadcrumbs">Accueil · Postes</div>
+          <h1 class="page-title">Postes ouverts</h1>
+          <p class="page-description">Créez, suivez et priorisez vos besoins de recrutement.</p>
+        </div>
+        <div class="quick-actions">
+          <a class="ghost button-link" href="pipeline.html">Voir pipeline</a>
+          <a class="primary button-link" href="new-job.html">Publier un poste</a>
+        </div>
+      </section>
 
-        <section class="card-grid">
-          <article class="card">
-            <div class="stat-label">Poste prioritaire</div>
-            <div class="stat-value">Product Designer</div>
-            <div class="stat-meta">Deadline dans 12 jours</div>
+      <section class="card-grid">
+        <article class="card">
+          <div class="stat-label">Poste prioritaire</div>
+          <div class="stat-value">Agent commercial H/F</div>
+          <div class="stat-meta">Deadline dans 12 jours</div>
+        </article>
+        <article class="card">
+          <div class="stat-label">Postes à relancer</div>
+          <div class="stat-value">3</div>
+          <div class="stat-meta">Managers en attente</div>
+        </article>
+        <article class="card">
+          <div class="stat-label">Sourcing actif</div>
+          <div class="stat-value">7</div>
+          <div class="stat-meta">Campagnes en cours</div>
+        </article>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Liste des postes</h2>
+          <a class="ghost small button-link" href="jobs.html">Filtres</a>
+        </div>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Poste</th>
+                <th>Manager</th>
+                <th>Ouvert</th>
+                <th>Statut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Agent commercial H/F</td>
+                <td>C. Martin</td>
+                <td>12 j</td>
+                <td>En sourcing</td>
+              </tr>
+              <tr>
+                <td>Responsable d'agence H/F</td>
+                <td>L. Petit</td>
+                <td>8 j</td>
+                <td>Entretiens</td>
+              </tr>
+              <tr>
+                <td>Conseiller financement</td>
+                <td>A. Nakamura</td>
+                <td>22 j</td>
+                <td>Shortlist</td>
+              </tr>
+              <tr>
+                <td>Assistant back-office</td>
+                <td>S. Bernard</td>
+                <td>5 j</td>
+                <td>Screening</td>
+              </tr>
+              <tr>
+                <td>Chef de projet digital</td>
+                <td>M. Rossi</td>
+                <td>16 j</td>
+                <td>Hiring manager</td>
+              </tr>
+              <tr>
+                <td>Chargé RH régional</td>
+                <td>I. Ali</td>
+                <td>9 j</td>
+                <td>En sourcing</td>
+              </tr>
+              <tr>
+                <td>Animateur réseau</td>
+                <td>C. Dubois</td>
+                <td>14 j</td>
+                <td>Entretiens</td>
+              </tr>
+              <tr>
+                <td>Assistant marketing local</td>
+                <td>A. Lopez</td>
+                <td>3 j</td>
+                <td>Screening</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Postes publiés (site carrière)</h2>
+          <a class="ghost small button-link" href="../career/ewigo/index.html" target="_blank" rel="noopener">
+            Voir côté candidat
+          </a>
+        </div>
+        <div class="results-list">
+          <article class="job-row">
+            <div class="job-title">Agent commercial H/F</div>
+            <div class="job-company">Agence Automobile Ewigo Paris</div>
+            <div class="job-location">Paris · 75015</div>
+            <div class="detail-meta">
+              <span class="pill">CDI</span>
+              <span class="pill">Temps plein</span>
+              <span class="pill">2 000€ - 6 000€</span>
+            </div>
+            <div class="job-snippet">
+              Accueil client, vente & suivi des dossiers. Candidature simplifiée.
+            </div>
+            <div class="job-actions">
+              <a class="ghost button-link" href="../career/ewigo/jobs/conseiller-commercial.html" target="_blank"
+                rel="noopener">
+                Aperçu candidat
+              </a>
+              <a class="primary button-link" href="career-settings.html">Modifier</a>
+            </div>
+            <details class="job-edit">
+              <summary>Modifier l'annonce</summary>
+              <form class="form">
+                <div class="form-grid">
+                  <label class="form-field">
+                    Titre
+                    <input type="text" value="Agent commercial H/F" />
+                  </label>
+                  <label class="form-field">
+                    Localisation
+                    <input type="text" value="Paris · 75015" />
+                  </label>
+                  <label class="form-field">
+                    Contrat
+                    <input type="text" value="CDI" />
+                  </label>
+                  <label class="form-field">
+                    Rémunération
+                    <input type="text" value="2 000€ - 6 000€" />
+                  </label>
+                </div>
+                <label class="form-field">
+                  Description courte
+                  <textarea>Accueil client, vente & suivi des dossiers. Candidature simplifiée.</textarea>
+                </label>
+                <div class="form-actions">
+                  <a class="primary button-link" href="jobs.html">Enregistrer</a>
+                  <a class="ghost button-link" href="jobs.html">Annuler</a>
+                </div>
+              </form>
+            </details>
           </article>
-          <article class="card">
-            <div class="stat-label">Postes à relancer</div>
-            <div class="stat-value">3</div>
-            <div class="stat-meta">Managers en attente</div>
-          </article>
-          <article class="card">
-            <div class="stat-label">Sourcing actif</div>
-            <div class="stat-value">7</div>
-            <div class="stat-meta">Campagnes en cours</div>
-          </article>
-        </section>
 
-        <section class="card">
+          <article class="job-row">
+            <div class="job-title">Responsable d'agence H/F</div>
+            <div class="job-company">Ewigo Lyon</div>
+            <div class="job-location">Lyon · 69002</div>
+            <div class="detail-meta">
+              <span class="pill">CDI</span>
+              <span class="pill">Manager</span>
+              <span class="pill">Bonus</span>
+            </div>
+            <div class="job-snippet">
+              Pilotage de l'agence, management & performance commerciale.
+            </div>
+            <div class="job-actions">
+              <a class="ghost button-link" href="../career/ewigo/jobs/responsable-agence.html" target="_blank"
+                rel="noopener">
+                Aperçu candidat
+              </a>
+              <a class="primary button-link" href="career-settings.html">Modifier</a>
+            </div>
+            <details class="job-edit">
+              <summary>Modifier l'annonce</summary>
+              <form class="form">
+                <div class="form-grid">
+                  <label class="form-field">
+                    Titre
+                    <input type="text" value="Responsable d'agence H/F" />
+                  </label>
+                  <label class="form-field">
+                    Localisation
+                    <input type="text" value="Lyon · 69002" />
+                  </label>
+                  <label class="form-field">
+                    Contrat
+                    <input type="text" value="CDI" />
+                  </label>
+                  <label class="form-field">
+                    Avantage clé
+                    <input type="text" value="Bonus" />
+                  </label>
+                </div>
+                <label class="form-field">
+                  Description courte
+                  <textarea>Pilotage de l'agence, management & performance commerciale.</textarea>
+                </label>
+                <div class="form-actions">
+                  <a class="primary button-link" href="jobs.html">Enregistrer</a>
+                  <a class="ghost button-link" href="jobs.html">Annuler</a>
+                </div>
+              </form>
+            </details>
+          </article>
+
+          <article class="job-row">
+            <div class="job-title">Conseiller financement</div>
+            <div class="job-company">Ewigo Toulouse</div>
+            <div class="job-location">Toulouse · 31000</div>
+            <div class="detail-meta">
+              <span class="pill">CDI</span>
+              <span class="pill">Finance</span>
+              <span class="pill">Temps plein</span>
+            </div>
+            <div class="job-snippet">
+              Montage de dossiers, partenariats bancaires, conseil client.
+            </div>
+          </article>
+
+          <article class="job-row">
+            <div class="job-title">Assistant back-office</div>
+            <div class="job-company">Ewigo Bordeaux</div>
+            <div class="job-location">Bordeaux · 33000</div>
+            <div class="detail-meta">
+              <span class="pill">CDD</span>
+              <span class="pill">Support</span>
+              <span class="pill">Tickets resto</span>
+            </div>
+            <div class="job-snippet">
+              Suivi administratif des ventes et reporting opérationnel.
+            </div>
+          </article>
+
+          <article class="job-row">
+            <div class="job-title">Chef de projet digital</div>
+            <div class="job-company">Ewigo Siège</div>
+            <div class="job-location">Paris</div>
+            <div class="detail-meta">
+              <span class="pill">CDI</span>
+              <span class="pill">Télétravail partiel</span>
+              <span class="pill">Marketing</span>
+            </div>
+            <div class="job-snippet">
+              Projets digitaux, UX, performance et acquisition.
+            </div>
+          </article>
+
+          <article class="job-row">
+            <div class="job-title">Chargé RH régional</div>
+            <div class="job-company">Ewigo Région Ouest</div>
+            <div class="job-location">Nantes</div>
+            <div class="detail-meta">
+              <span class="pill">CDI</span>
+              <span class="pill">Réseau</span>
+              <span class="pill">Mobilité</span>
+            </div>
+            <div class="job-snippet">
+              Recrutement, formation, marque employeur régionale.
+            </div>
+          </article>
+
+          <article class="job-row">
+            <div class="job-title">Animateur réseau</div>
+            <div class="job-company">Ewigo Méditerranée</div>
+            <div class="job-location">Marseille</div>
+            <div class="detail-meta">
+              <span class="pill">CDI</span>
+              <span class="pill">Manager</span>
+              <span class="pill">Véhicule</span>
+            </div>
+            <div class="job-snippet">
+              Coaching des agences et accompagnement performance.
+            </div>
+          </article>
+
+          <article class="job-row">
+            <div class="job-title">Assistant marketing local</div>
+            <div class="job-company">Ewigo Lille</div>
+            <div class="job-location">Lille</div>
+            <div class="detail-meta">
+              <span class="pill">Alternance</span>
+              <span class="pill">Marketing</span>
+              <span class="pill">Flexible</span>
+            </div>
+            <div class="job-snippet">
+              Animation locale, réseaux sociaux, supports agence.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card">
           <div class="card-header">
-            <h2>Liste des postes</h2>
-            <a class="ghost small button-link" href="jobs.html">Filtres</a>
+            <h2>Actions rapides</h2>
+            <span class="status-chip">Priorité</span>
           </div>
-          <div class="table-wrapper">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Poste</th>
-                  <th>Manager</th>
-                  <th>Ouvert</th>
-                  <th>Statut</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Full Stack Engineer</td>
-                  <td>L. Petit</td>
-                  <td>12 j</td>
-                  <td>En sourcing</td>
-                </tr>
-                <tr>
-                  <td>Product Designer</td>
-                  <td>C. Durand</td>
-                  <td>8 j</td>
-                  <td>Entretiens</td>
-                </tr>
-                <tr>
-                  <td>Account Executive</td>
-                  <td>A. Nakamura</td>
-                  <td>22 j</td>
-                  <td>Shortlist</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="form-actions">
+            <a class="primary button-link" href="new-job.html">Créer un poste</a>
+            <a class="ghost button-link" href="interviews.html">Planifier entretien</a>
+            <a class="ghost button-link" href="messaging.html">Relancer manager</a>
           </div>
-        </section>
+        </div>
 
-        <section class="grid">
-          <div class="card">
-            <div class="card-header">
-              <h2>Actions rapides</h2>
-              <span class="status-chip">Priorité</span>
-            </div>
-            <div class="form-actions">
-              <a class="primary button-link" href="new-job.html">Créer un poste</a>
-              <a class="ghost button-link" href="interviews.html">Planifier entretien</a>
-              <a class="ghost button-link" href="messaging.html">Relancer manager</a>
-            </div>
+        <div class="card">
+          <div class="card-header">
+            <h2>Brief express</h2>
+            <a class="ghost small button-link" href="new-job.html">Ouvrir le formulaire</a>
           </div>
-
-          <div class="card">
-            <div class="card-header">
-              <h2>Brief express</h2>
-              <a class="ghost small button-link" href="new-job.html">Ouvrir le formulaire</a>
-            </div>
-            <form class="form">
-              <div class="form-grid">
-                <label class="form-field">
-                  Intitulé du poste
-                  <input type="text" placeholder="Ex: Full Stack Engineer" />
-                </label>
-                <label class="form-field">
-                  Équipe
-                  <select>
-                    <option>Tech</option>
-                    <option>Produit</option>
-                    <option>Sales</option>
-                  </select>
-                </label>
-              </div>
+          <form class="form">
+            <div class="form-grid">
               <label class="form-field">
-                Objectif de recrutement
-                <textarea placeholder="Contexte, missions, deadline..."></textarea>
+                Intitulé du poste
+                <input type="text" placeholder="Ex: Full Stack Engineer" />
               </label>
-              <div class="form-actions">
-                <a class="primary button-link" href="jobs.html">Créer le poste</a>
-                <a class="ghost button-link" href="jobs.html">Enregistrer en brouillon</a>
-              </div>
-            </form>
-          </div>
-        </section>
-      </main>
-    </div>
-  </body>
-</html>
+              <label class="form-field">
+                Équipe
+                <select>
+                  <option>Tech</option>
+                  <option>Produit</option>
+                  <option>Sales</option>
+                </select>
+              </label>
+            </div>
+            <label class="form-field">
+              Objectif de recrutement
+              <textarea placeholder="Contexte, missions, deadline..."></textarea>
+            </label>
+            <div class="form-actions">
+              <a class="primary button-link" href="jobs.html">Créer le poste</a>
+              <a class="ghost button-link" href="jobs.html">Enregistrer en brouillon</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
 
+</html>
