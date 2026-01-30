@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HiringAI · Postes</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">ATS</span>
+        <div>
+          <div class="title">HiringAI</div>
+          <div class="subtitle">Mock-up</div>
+        </div>
+      </div>
+      <nav class="topbar-actions">
+        <a class="ghost button-link" href="new-job.html">Nouveau poste</a>
+        <a class="primary button-link" href="new-candidate.html">Ajouter un candidat</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="section-title">Navigation</div>
+        <ul class="nav">
+          <li><a class="nav-link" href="../index.html">Tableau de bord</a></li>
+          <li><a class="nav-link active" href="jobs.html">Postes</a></li>
+          <li><a class="nav-link" href="candidates.html">Candidats</a></li>
+          <li><a class="nav-link" href="pipeline.html">Pipeline</a></li>
+          <li><a class="nav-link" href="interviews.html">Entretiens</a></li>
+          <li><a class="nav-link" href="messaging.html">Messagerie</a></li>
+          <li><a class="nav-link" href="reports.html">Rapports</a></li>
+          <li><a class="nav-link" href="settings.html">Paramètres</a></li>
+          <li><a class="nav-link" href="career-settings.html">Gestion Site Carrière</a></li>
+          <li>
+            <a class="nav-link" href="../career/ewigo/index.html" target="_blank" rel="noopener">
+              Ouvrir le site carrière Ewigo
+            </a>
+          </li>
+        </ul>
+        <div class="section-title">Raccourcis</div>
+        <ul class="nav">
+          <li><a class="nav-link" href="templates.html">Modèles d'email</a></li>
+          <li><a class="nav-link" href="team.html">Team & rôles</a></li>
+          <li><a class="nav-link" href="integrations.html">Intégrations</a></li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <section class="hero">
+          <div>
+            <div class="breadcrumbs">Accueil · Postes</div>
+            <h1 class="page-title">Postes ouverts</h1>
+            <p class="page-description">Créez, suivez et priorisez vos besoins de recrutement.</p>
+          </div>
+          <div class="quick-actions">
+            <a class="ghost button-link" href="pipeline.html">Voir pipeline</a>
+            <a class="primary button-link" href="new-job.html">Publier un poste</a>
+          </div>
+        </section>
+
+        <section class="card-grid">
+          <article class="card">
+            <div class="stat-label">Poste prioritaire</div>
+            <div class="stat-value">Product Designer</div>
+            <div class="stat-meta">Deadline dans 12 jours</div>
+          </article>
+          <article class="card">
+            <div class="stat-label">Postes à relancer</div>
+            <div class="stat-value">3</div>
+            <div class="stat-meta">Managers en attente</div>
+          </article>
+          <article class="card">
+            <div class="stat-label">Sourcing actif</div>
+            <div class="stat-value">7</div>
+            <div class="stat-meta">Campagnes en cours</div>
+          </article>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h2>Liste des postes</h2>
+            <a class="ghost small button-link" href="jobs.html">Filtres</a>
+          </div>
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Poste</th>
+                  <th>Manager</th>
+                  <th>Ouvert</th>
+                  <th>Statut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Full Stack Engineer</td>
+                  <td>L. Petit</td>
+                  <td>12 j</td>
+                  <td>En sourcing</td>
+                </tr>
+                <tr>
+                  <td>Product Designer</td>
+                  <td>C. Durand</td>
+                  <td>8 j</td>
+                  <td>Entretiens</td>
+                </tr>
+                <tr>
+                  <td>Account Executive</td>
+                  <td>A. Nakamura</td>
+                  <td>22 j</td>
+                  <td>Shortlist</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="grid">
+          <div class="card">
+            <div class="card-header">
+              <h2>Actions rapides</h2>
+              <span class="status-chip">Priorité</span>
+            </div>
+            <div class="form-actions">
+              <a class="primary button-link" href="new-job.html">Créer un poste</a>
+              <a class="ghost button-link" href="interviews.html">Planifier entretien</a>
+              <a class="ghost button-link" href="messaging.html">Relancer manager</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Brief express</h2>
+              <a class="ghost small button-link" href="new-job.html">Ouvrir le formulaire</a>
+            </div>
+            <form class="form">
+              <div class="form-grid">
+                <label class="form-field">
+                  Intitulé du poste
+                  <input type="text" placeholder="Ex: Full Stack Engineer" />
+                </label>
+                <label class="form-field">
+                  Équipe
+                  <select>
+                    <option>Tech</option>
+                    <option>Produit</option>
+                    <option>Sales</option>
+                  </select>
+                </label>
+              </div>
+              <label class="form-field">
+                Objectif de recrutement
+                <textarea placeholder="Contexte, missions, deadline..."></textarea>
+              </label>
+              <div class="form-actions">
+                <a class="primary button-link" href="jobs.html">Créer le poste</a>
+                <a class="ghost button-link" href="jobs.html">Enregistrer en brouillon</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+

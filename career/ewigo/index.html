@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ewigo · Carrières</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+
+<body class="ewigo-theme career-minimal">
+  <div class="career-site ewigo-theme career-minimal">
+    <header class="career-site-header">
+      <div class="brand">
+        <img class="logo-img" src="assets/images/image_commerical.jpeg" alt="Logo Ewigo" />
+        <div>
+          <div class="title">EWIGO</div>
+          <div class="subtitle">Site carrière</div>
+        </div>
+      </div>
+      <nav class="career-site-nav">
+        <a class="active" href="index.html">Carrières</a>
+        <a href="index.html#jobs">Nos offres</a>
+        <a href="index.html#locations">Agences</a>
+        <a href="index.html#culture">Culture</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="career-site-hero career-hero-banner"
+      style="background-image: url('assets/banner/banniere_ewigo.jpg')">
+      <div class="hero-content">
+        <h1>Rejoignez l'aventure Ewigo</h1>
+        <p class="hero-subtitle">
+          Leader de la vente de véhicules d'occasion entre particuliers,
+          Ewigo recrute partout en France. Trouvez le poste qui vous ressemble.
+        </p>
+        <div class="search-bar">
+          <input class="search-input" type="text" placeholder="Intitulé du poste" list="job-suggestions" />
+          <datalist id="job-suggestions">
+            <option value="Conseiller commercial"></option>
+            <option value="Responsable d'agence"></option>
+            <option value="Conseiller financement"></option>
+            <option value="Assistant back-office"></option>
+            <option value="Chef de projet digital"></option>
+            <option value="Chargé RH régional"></option>
+            <option value="Animateur réseau"></option>
+            <option value="Assistant marketing local"></option>
+          </datalist>
+          <select class="search-select">
+            <option>Toute la France</option>
+            <option>Île-de-France</option>
+            <option>Auvergne-Rhône-Alpes</option>
+            <option>Nouvelle-Aquitaine</option>
+          </select>
+          <a class="primary button-link" href="#jobs">Rechercher</a>
+        </div>
+        <div class="filter-bar">
+          <details class="filter-pill">
+            <summary>Salaire</summary>
+            <div class="filter-menu">
+              <label class="form-field">
+                Fourchette
+                <select>
+                  <option>Moins de 2 000€</option>
+                  <option>2 000€ - 3 500€</option>
+                  <option>3 500€ - 5 000€</option>
+                  <option>5 000€ +</option>
+                </select>
+              </label>
+              <a class="ghost button-link" href="#jobs">Appliquer</a>
+            </div>
+          </details>
+          <details class="filter-pill">
+            <summary>Télétravail</summary>
+            <div class="filter-menu">
+              <label class="form-field">
+                Mode
+                <select>
+                  <option>Sur site</option>
+                  <option>Hybride</option>
+                  <option>Remote</option>
+                </select>
+              </label>
+              <a class="ghost button-link" href="#jobs">Appliquer</a>
+            </div>
+          </details>
+          <details class="filter-pill">
+            <summary>Type de contrat</summary>
+            <div class="filter-menu">
+              <label class="form-field">
+                Contrat
+                <select>
+                  <option>CDI</option>
+                  <option>CDD</option>
+                  <option>Alternance</option>
+                  <option>Stage</option>
+                </select>
+              </label>
+              <a class="ghost button-link" href="#jobs">Appliquer</a>
+            </div>
+          </details>
+          <details class="filter-pill">
+            <summary>Temps plein/partiel</summary>
+            <div class="filter-menu">
+              <label class="form-field">
+                Temps
+                <select>
+                  <option>Temps plein</option>
+                  <option>Temps partiel</option>
+                </select>
+              </label>
+              <a class="ghost button-link" href="#jobs">Appliquer</a>
+            </div>
+          </details>
+          <details class="filter-pill">
+            <summary>Avantages</summary>
+            <div class="filter-menu">
+              <label class="form-field">
+                Avantages
+                <select>
+                  <option>Tickets resto</option>
+                  <option>Bonus</option>
+                  <option>Véhicule</option>
+                  <option>Mutuelle</option>
+                </select>
+              </label>
+              <a class="ghost button-link" href="#jobs">Appliquer</a>
+            </div>
+          </details>
+          <details class="filter-pill">
+            <summary>Localisation</summary>
+            <div class="filter-menu">
+              <label class="form-field">
+                Région
+                <select>
+                  <option>Île-de-France</option>
+                  <option>Auvergne-Rhône-Alpes</option>
+                  <option>Nouvelle-Aquitaine</option>
+                  <option>Occitanie</option>
+                </select>
+              </label>
+              <a class="ghost button-link" href="#jobs">Appliquer</a>
+            </div>
+          </details>
+          <details class="filter-pill">
+            <summary>Expérience</summary>
+            <div class="filter-menu">
+              <label class="form-field">
+                Niveau
+                <select>
+                  <option>Junior</option>
+                  <option>Confirmé</option>
+                  <option>Senior</option>
+                  <option>Manager</option>
+                </select>
+              </label>
+              <a class="ghost button-link" href="#jobs">Appliquer</a>
+            </div>
+          </details>
+          <details class="filter-pill">
+            <summary>Dates</summary>
+            <div class="filter-menu">
+              <label class="form-field">
+                Publié
+                <select>
+                  <option>24h</option>
+                  <option>7 jours</option>
+                  <option>30 jours</option>
+                </select>
+              </label>
+              <a class="ghost button-link" href="#jobs">Appliquer</a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <main class="career-site-content">
+      <section id="culture" class="career-grid">
+        <a class="career-card" href="values.html">
+          <strong>201 points de vente</strong>
+          <div class="muted">Un réseau national</div>
+        </a>
+        <a class="career-card" href="values.html">
+          <strong>Mobilité interne</strong>
+          <div class="muted">Formations et évolutions</div>
+        </a>
+        <a class="career-card" href="values.html">
+          <strong>Culture client</strong>
+          <div class="muted">Proximité & confiance</div>
+        </a>
+        <a class="career-card" href="values.html">
+          <strong>Esprit franchise</strong>
+          <div class="muted">Autonomie & collaboration</div>
+        </a>
+      </section>
+
+      <section id="jobs">
+        <div class="results-header">
+          <div><strong>8 offres</strong> · agent commercial Ewigo</div>
+          <div>Trier par : <a class="back-link" href="#jobs">pertinence</a></div>
+        </div>
+
+        <div class="results-grid">
+          <div class="results-list">
+            <article class="job-row active">
+              <div class="job-title">Agent commercial H/F</div>
+              <div class="job-company">Agence Automobile Ewigo Paris</div>
+              <div class="job-location">75015 Paris</div>
+              <div class="detail-meta">
+                <span class="pill">CDI</span>
+                <span class="pill">Temps plein</span>
+                <span class="pill">2 000€ - 6 000€</span>
+              </div>
+              <div class="job-snippet">
+                Candidature simplifiée · Accueil client, vente & suivi des dossiers.
+              </div>
+              <div class="form-actions">
+                <a class="ghost button-link" href="jobs/conseiller-commercial.html">Voir fiche</a>
+                <a class="primary button-link" href="apply.html">Postuler</a>
+              </div>
+            </article>
+
+            <article class="job-row">
+              <div class="job-title">Responsable d'agence H/F</div>
+              <div class="job-company">Ewigo Lyon</div>
+              <div class="job-location">69002 Lyon</div>
+              <div class="detail-meta">
+                <span class="pill">CDI</span>
+                <span class="pill">Manager</span>
+                <span class="pill">Bonus</span>
+              </div>
+              <div class="job-snippet">
+                Pilotage de l'agence, management & performance commerciale.
+              </div>
+              <div class="form-actions">
+                <a class="ghost button-link" href="jobs/responsable-agence.html">Voir fiche</a>
+                <a class="primary button-link" href="apply.html">Postuler</a>
+              </div>
+            </article>
+
+            <article class="job-row">
+              <div class="job-title">Conseiller financement</div>
+              <div class="job-company">Ewigo Toulouse</div>
+              <div class="job-location">31000 Toulouse</div>
+              <div class="detail-meta">
+                <span class="pill">CDI</span>
+                <span class="pill">Finance</span>
+                <span class="pill">Temps plein</span>
+              </div>
+              <div class="job-snippet">
+                Montage de dossiers, partenariats bancaires, conseil client.
+              </div>
+              <div class="form-actions">
+                <a class="ghost button-link" href="jobs/conseiller-financement.html">Voir fiche</a>
+                <a class="primary button-link" href="apply.html">Postuler</a>
+              </div>
+            </article>
+
+            <article class="job-row">
+              <div class="job-title">Assistant back-office</div>
+              <div class="job-company">Ewigo Bordeaux</div>
+              <div class="job-location">33000 Bordeaux</div>
+              <div class="detail-meta">
+                <span class="pill">CDD</span>
+                <span class="pill">Support</span>
+                <span class="pill">Tickets resto</span>
+              </div>
+              <div class="job-snippet">
+                Suivi administratif des ventes et reporting opérationnel.
+              </div>
+              <div class="form-actions">
+                <a class="ghost button-link" href="jobs/assistant-back-office.html">Voir fiche</a>
+                <a class="primary button-link" href="apply.html">Postuler</a>
+              </div>
+            </article>
+
+            <article class="job-row">
+              <div class="job-title">Chef de projet digital</div>
+              <div class="job-company">Ewigo Siège</div>
+              <div class="job-location">Paris</div>
+              <div class="detail-meta">
+                <span class="pill">CDI</span>
+                <span class="pill">Télétravail partiel</span>
+                <span class="pill">Marketing</span>
+              </div>
+              <div class="job-snippet">
+                Projets digitaux, UX, performance et acquisition.
+              </div>
+              <div class="form-actions">
+                <a class="ghost button-link" href="jobs/chef-projet-digital.html">Voir fiche</a>
+                <a class="primary button-link" href="apply.html">Postuler</a>
+              </div>
+            </article>
+
+            <article class="job-row">
+              <div class="job-title">Chargé RH régional</div>
+              <div class="job-company">Ewigo Région Ouest</div>
+              <div class="job-location">Nantes</div>
+              <div class="detail-meta">
+                <span class="pill">CDI</span>
+                <span class="pill">Réseau</span>
+                <span class="pill">Mobilité</span>
+              </div>
+              <div class="job-snippet">
+                Recrutement, formation, marque employeur régionale.
+              </div>
+              <div class="form-actions">
+                <a class="ghost button-link" href="jobs/charge-rh-regional.html">Voir fiche</a>
+                <a class="primary button-link" href="apply.html">Postuler</a>
+              </div>
+            </article>
+
+            <article class="job-row">
+              <div class="job-title">Animateur réseau</div>
+              <div class="job-company">Ewigo Méditerranée</div>
+              <div class="job-location">Marseille</div>
+              <div class="detail-meta">
+                <span class="pill">CDI</span>
+                <span class="pill">Manager</span>
+                <span class="pill">Véhicule</span>
+              </div>
+              <div class="job-snippet">
+                Coaching des agences et accompagnement performance.
+              </div>
+              <div class="form-actions">
+                <a class="ghost button-link" href="jobs/animateur-reseau.html">Voir fiche</a>
+                <a class="primary button-link" href="apply.html">Postuler</a>
+              </div>
+            </article>
+
+            <article class="job-row">
+              <div class="job-title">Assistant marketing local</div>
+              <div class="job-company">Ewigo Lille</div>
+              <div class="job-location">Lille</div>
+              <div class="detail-meta">
+                <span class="pill">Alternance</span>
+                <span class="pill">Marketing</span>
+                <span class="pill">Flexible</span>
+              </div>
+              <div class="job-snippet">
+                Animation locale, réseaux sociaux, supports agence.
+              </div>
+              <div class="form-actions">
+                <a class="ghost button-link" href="jobs/assistant-marketing-local.html">Voir fiche</a>
+                <a class="primary button-link" href="apply.html">Postuler</a>
+              </div>
+            </article>
+          </div>
+
+          <aside class="results-detail">
+            <div class="detail-card">
+              <h2>Agent commercial H/F</h2>
+              <div class="detail-meta">
+                Agence Automobile Ewigo Paris · 75015 Paris
+              </div>
+              <div class="detail-facts">
+                <div class="fact-card">Salaire: 2 000€ à 6 000€</div>
+                <div class="fact-card">Contrat: CDI</div>
+                <div class="fact-card">Temps: Temps plein</div>
+                <div class="fact-card">Bonus: Variable + primes</div>
+                <div class="fact-card">Avantages: Tickets resto</div>
+                <div class="fact-card">Télétravail: Non</div>
+              </div>
+              <div class="form-actions">
+                <a class="primary button-link" href="apply.html">Postuler maintenant</a>
+                <a class="ghost button-link" href="jobs/conseiller-commercial.html">Voir fiche complète</a>
+              </div>
+              <div class="detail-section">
+                <h3>Description</h3>
+                <p class="muted">
+                  Vous accompagnez les clients dans l'achat et la vente de véhicules
+                  d'occasion avec une approche conseil et de proximité.
+                </p>
+              </div>
+              <div class="detail-section">
+                <h3>Missions</h3>
+                <ul class="detail-list">
+                  <li>Accueillir, conseiller et convertir les prospects</li>
+                  <li>Gérer les dossiers de vente et le suivi client</li>
+                  <li>Développer la visibilité locale de l'agence</li>
+                </ul>
+              </div>
+              <div class="detail-section">
+                <h3>Profil</h3>
+                <ul class="detail-list">
+                  <li>Expérience commerciale 2 ans+</li>
+                  <li>Excellent relationnel et sens du service</li>
+                  <li>Goût du challenge et autonomie</li>
+                </ul>
+              </div>
+              <div class="detail-section">
+                <h3>À propos d'Ewigo</h3>
+                <p class="muted">
+                  Ewigo est le leader français de la vente de véhicules d'occasion
+                  entre particuliers, avec plus de 200 agences et une culture
+                  orientée client.
+                </p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <h2>La vie chez Ewigo</h2>
+        <div class="image-strip">
+          <div class="image-tile" style="background-image: url('assets/images/image_agence.webp')">
+            <div class="image-caption">Agences modernes</div>
+          </div>
+          <div class="image-tile" style="background-image: url('assets/images/image_bureaux.png')">
+            <div class="image-caption">Esprit d'équipe</div>
+          </div>
+          <div class="image-tile" style="background-image: url('assets/images/image_commerical.jpeg')">
+            <div class="image-caption">Carrière commerciale</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="locations" class="card">
+        <div class="card-header">
+          <h2>Nos points de vente</h2>
+          <a class="ghost small button-link" href="#locations">201 points</a>
+        </div>
+        <div class="map-mock">
+          <div class="pin one"></div>
+          <div class="pin two"></div>
+          <div class="pin three"></div>
+          <div class="map-overlay">
+            <strong>Agence mise en avant</strong>
+            <div>365 avenue d'Aquitaine, 47550 Boé</div>
+            <div>05 24 29 39 50 · agen@ewigo.com</div>
+            <a class="primary button-link" href="#locations">Visiter l'agence</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <section class="career-site-content">
+      <div class="grid">
+        <div class="cta-box">
+          <div class="card-header">
+            <h2>Nos points de vente</h2>
+            <span class="badge">201 points</span>
+          </div>
+          <p>Un réseau national pour accompagner nos clients localement.</p>
+          <div class="highlight-grid">
+            <div class="highlight-card">
+              <strong>Agence mise en avant</strong>
+              <div class="muted">365 avenue d'Aquitaine, 47550 Boé</div>
+              <div class="muted">05 24 29 39 50 · agen@ewigo.com</div>
+            </div>
+            <div class="highlight-card">
+              <strong>Nos équipes</strong>
+              <div class="muted">Commercial, back-office, management</div>
+            </div>
+          </div>
+          <div class="form-actions">
+            <a class="primary button-link" href="#locations">Visiter l'agence</a>
+          </div>
+        </div>
+
+        <div class="cta-box">
+          <div class="card-header">
+            <h2>Prêt à rejoindre Ewigo ?</h2>
+            <span class="badge">201 points de vente</span>
+          </div>
+          <p>Découvrez toutes les opportunités et postulez en quelques minutes.</p>
+          <div class="form-actions">
+            <a class="primary button-link" href="#jobs">Voir toutes les offres</a>
+            <a class="ghost button-link" href="https://www.instagram.com/reel/DTQr-w-lDCX/" target="_blank"
+              rel="noopener">
+              Voir la vidéo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="career-site-footer">
+      Ewigo · recrutement@ewigo.com · 80+ agences en France
+    </footer>
+  </div>
+</body>
+
+</html>

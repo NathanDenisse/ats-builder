@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HiringAI</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">ATS</span>
+        <div>
+          <div class="title">HiringAI</div>
+          <div class="subtitle">Mock-up</div>
+        </div>
+      </div>
+      <nav class="topbar-actions">
+        <a class="ghost button-link" href="pages/new-job.html">Nouveau poste</a>
+        <a class="primary button-link" href="pages/new-candidate.html">Ajouter un candidat</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="section-title">Navigation</div>
+        <ul class="nav">
+          <li><a class="nav-link active" href="index.html">Tableau de bord</a></li>
+          <li><a class="nav-link" href="pages/jobs.html">Postes</a></li>
+          <li><a class="nav-link" href="pages/candidates.html">Candidats</a></li>
+          <li><a class="nav-link" href="pages/pipeline.html">Pipeline</a></li>
+          <li><a class="nav-link" href="pages/interviews.html">Entretiens</a></li>
+          <li><a class="nav-link" href="pages/messaging.html">Messagerie</a></li>
+          <li><a class="nav-link" href="pages/reports.html">Rapports</a></li>
+          <li><a class="nav-link" href="pages/settings.html">Paramètres</a></li>
+          <li><a class="nav-link" href="pages/career-settings.html">Gestion Site Carrière</a></li>
+          <li>
+            <a class="nav-link" href="career/ewigo/index.html" target="_blank" rel="noopener">
+              Ouvrir le site carrière Ewigo
+            </a>
+          </li>
+        </ul>
+        <div class="section-title">Raccourcis</div>
+        <ul class="nav">
+          <li><a class="nav-link" href="pages/templates.html">Modèles d'email</a></li>
+          <li><a class="nav-link" href="pages/team.html">Team & rôles</a></li>
+          <li><a class="nav-link" href="pages/integrations.html">Intégrations</a></li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <section class="hero">
+          <div>
+            <h1>Bonjour Nathan</h1>
+            <p>Voici un aperçu de votre pipeline de recrutement aujourd'hui.</p>
+          </div>
+          <div class="filters">
+            <label>
+              Période
+              <select>
+                <option>7 derniers jours</option>
+                <option>30 derniers jours</option>
+                <option>90 derniers jours</option>
+              </select>
+            </label>
+            <label>
+              Équipe
+              <select>
+                <option>Toutes les équipes</option>
+                <option>Produit</option>
+                <option>Tech</option>
+                <option>Sales</option>
+              </select>
+            </label>
+          </div>
+        </section>
+
+        <section class="stats-grid">
+          <article>
+            <div class="stat-label">Postes ouverts</div>
+            <div class="stat-value">12</div>
+            <div class="stat-meta">+2 ce mois-ci</div>
+          </article>
+          <article>
+            <div class="stat-label">Candidats actifs</div>
+            <div class="stat-value">284</div>
+            <div class="stat-meta">41 nouveaux</div>
+          </article>
+          <article>
+            <div class="stat-label">Entretiens cette semaine</div>
+            <div class="stat-value">18</div>
+            <div class="stat-meta">4 en attente</div>
+          </article>
+          <article>
+            <div class="stat-label">Temps moyen de recrutement</div>
+            <div class="stat-value">24 jours</div>
+            <div class="stat-meta">-3 jours vs. mois dernier</div>
+          </article>
+        </section>
+
+        <section class="grid">
+          <div class="card">
+            <div class="card-header">
+              <h2>Pipeline par poste</h2>
+              <a class="ghost small button-link" href="pages/jobs.html">Voir tout</a>
+            </div>
+            <div class="pipeline">
+              <div class="pipeline-item">
+                <div class="pipeline-title">Product Designer</div>
+                <div class="pipeline-meta">38 candidats</div>
+                <div class="pipeline-bar">
+                  <span style="width: 75%"></span>
+                </div>
+              </div>
+              <div class="pipeline-item">
+                <div class="pipeline-title">Full Stack Engineer</div>
+                <div class="pipeline-meta">52 candidats</div>
+                <div class="pipeline-bar">
+                  <span style="width: 62%"></span>
+                </div>
+              </div>
+              <div class="pipeline-item">
+                <div class="pipeline-title">Account Executive</div>
+                <div class="pipeline-meta">27 candidats</div>
+                <div class="pipeline-bar">
+                  <span style="width: 48%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Entretiens à venir</h2>
+              <a class="ghost small button-link" href="pages/interviews.html">Calendrier</a>
+            </div>
+            <ul class="list">
+              <li>
+                <div>
+                  <strong>Sofia Martin</strong>
+                  <div class="muted">Tech Screen · Backend</div>
+                </div>
+                <div class="tag">Aujourd'hui 14:30</div>
+              </li>
+              <li>
+                <div>
+                  <strong>Imran Ali</strong>
+                  <div class="muted">Hiring Manager · Product</div>
+                </div>
+                <div class="tag">Demain 10:00</div>
+              </li>
+              <li>
+                <div>
+                  <strong>Chloé Bernard</strong>
+                  <div class="muted">Culture Fit · Sales</div>
+                </div>
+                <div class="tag">Ven 16:15</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="grid">
+          <div class="card">
+            <div class="card-header">
+              <h2>Top candidats</h2>
+              <a class="ghost small button-link" href="pages/candidates.html">Trier</a>
+            </div>
+            <div class="table-wrapper">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Nom</th>
+                    <th>Poste</th>
+                    <th>Score</th>
+                    <th>Étape</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Camille Durand</td>
+                    <td>Designer</td>
+                    <td>92</td>
+                    <td>Offer</td>
+                  </tr>
+                  <tr>
+                    <td>Louis Petit</td>
+                    <td>Backend</td>
+                    <td>88</td>
+                    <td>Onsite</td>
+                  </tr>
+                  <tr>
+                    <td>Aya Nakamura</td>
+                    <td>Sales</td>
+                    <td>85</td>
+                    <td>Screen</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Activité récente</h2>
+              <a class="ghost small button-link" href="pages/reports.html">Voir tout</a>
+            </div>
+            <ul class="timeline">
+              <li>
+                <div class="dot"></div>
+                <div>
+                  <strong>Offre envoyée</strong>
+                  <div class="muted">Camille Durand · Product Designer</div>
+                </div>
+                <span>Il y a 2h</span>
+              </li>
+              <li>
+                <div class="dot"></div>
+                <div>
+                  <strong>Entretien confirmé</strong>
+                  <div class="muted">Imran Ali · Full Stack</div>
+                </div>
+                <span>Il y a 5h</span>
+              </li>
+              <li>
+                <div class="dot"></div>
+                <div>
+                  <strong>Nouveau candidat</strong>
+                  <div class="muted">Aya Nakamura · AE</div>
+                </div>
+                <span>Hier</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

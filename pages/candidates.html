@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HiringAI · Candidats</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">ATS</span>
+        <div>
+          <div class="title">HiringAI</div>
+          <div class="subtitle">Mock-up</div>
+        </div>
+      </div>
+      <nav class="topbar-actions">
+        <a class="ghost button-link" href="new-job.html">Nouveau poste</a>
+        <a class="primary button-link" href="new-candidate.html">Ajouter un candidat</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="section-title">Navigation</div>
+        <ul class="nav">
+          <li><a class="nav-link" href="../index.html">Tableau de bord</a></li>
+          <li><a class="nav-link" href="jobs.html">Postes</a></li>
+          <li><a class="nav-link active" href="candidates.html">Candidats</a></li>
+          <li><a class="nav-link" href="pipeline.html">Pipeline</a></li>
+          <li><a class="nav-link" href="interviews.html">Entretiens</a></li>
+          <li><a class="nav-link" href="messaging.html">Messagerie</a></li>
+          <li><a class="nav-link" href="reports.html">Rapports</a></li>
+          <li><a class="nav-link" href="settings.html">Paramètres</a></li>
+          <li><a class="nav-link" href="career-settings.html">Gestion Site Carrière</a></li>
+          <li>
+            <a class="nav-link" href="../career/ewigo/index.html" target="_blank" rel="noopener">
+              Ouvrir le site carrière Ewigo
+            </a>
+          </li>
+        </ul>
+        <div class="section-title">Raccourcis</div>
+        <ul class="nav">
+          <li><a class="nav-link" href="templates.html">Modèles d'email</a></li>
+          <li><a class="nav-link" href="team.html">Team & rôles</a></li>
+          <li><a class="nav-link" href="integrations.html">Intégrations</a></li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <section class="hero">
+          <div>
+            <div class="breadcrumbs">Accueil · Candidats</div>
+            <h1 class="page-title">Candidats</h1>
+            <p class="page-description">Centralisez les profils, notes et échanges.</p>
+          </div>
+          <div class="quick-actions">
+            <a class="ghost button-link" href="pipeline.html">Voir pipeline</a>
+            <a class="primary button-link" href="new-candidate.html">Importer un CV</a>
+          </div>
+        </section>
+
+        <section class="card-grid">
+          <article class="card">
+            <div class="stat-label">Nouveaux profils</div>
+            <div class="stat-value">41</div>
+            <div class="stat-meta">7 jours</div>
+          </article>
+          <article class="card">
+            <div class="stat-label">À relancer</div>
+            <div class="stat-value">12</div>
+            <div class="stat-meta">Pas de réponse</div>
+          </article>
+          <article class="card">
+            <div class="stat-label">En entretien</div>
+            <div class="stat-value">19</div>
+            <div class="stat-meta">Cette semaine</div>
+          </article>
+        </section>
+
+        <section class="grid">
+          <div class="card">
+            <div class="card-header">
+              <h2>Liste des candidats</h2>
+              <a class="ghost small button-link" href="candidates.html">Segments</a>
+            </div>
+            <div class="table-wrapper">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Nom</th>
+                    <th>Poste</th>
+                    <th>Score</th>
+                    <th>Statut</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sofia Martin</td>
+                    <td>Backend</td>
+                    <td>89</td>
+                    <td>Screening</td>
+                  </tr>
+                  <tr>
+                    <td>Imran Ali</td>
+                    <td>Full Stack</td>
+                    <td>84</td>
+                    <td>HM Interview</td>
+                  </tr>
+                  <tr>
+                    <td>Chloé Bernard</td>
+                    <td>Sales</td>
+                    <td>82</td>
+                    <td>Culture Fit</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Insights rapides</h2>
+              <a class="ghost small button-link" href="reports.html">Exporter</a>
+            </div>
+            <div class="empty-state">
+              Les candidats ayant un score &gt; 85 répondent 2x plus vite. Ajoutez un
+              modèle d'email pour accélérer le suivi.
+            </div>
+          </div>
+        </section>
+
+        <section class="grid">
+          <div class="card">
+            <div class="card-header">
+              <h2>Ajouter un candidat</h2>
+              <a class="ghost small button-link" href="new-candidate.html">Formulaire complet</a>
+            </div>
+            <form class="form">
+              <div class="form-grid">
+                <label class="form-field">
+                  Nom complet
+                  <input type="text" placeholder="Ex: Sofia Martin" />
+                </label>
+                <label class="form-field">
+                  Poste cible
+                  <select>
+                    <option>Full Stack Engineer</option>
+                    <option>Product Designer</option>
+                    <option>Account Executive</option>
+                  </select>
+                </label>
+              </div>
+              <label class="form-field">
+                Note recruteur
+                <textarea placeholder="Résumé du profil, points forts..."></textarea>
+              </label>
+              <div class="form-actions">
+                <a class="primary button-link" href="candidates.html">Créer le candidat</a>
+                <a class="ghost button-link" href="pipeline.html">Envoyer au pipeline</a>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Actions rapides</h2>
+              <span class="status-chip">Aujourd'hui</span>
+            </div>
+            <div class="form-actions">
+              <a class="ghost button-link" href="messaging.html">Envoyer un message</a>
+              <a class="ghost button-link" href="interviews.html">Planifier entretien</a>
+              <a class="primary button-link" href="reports.html">Analyser la source</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
