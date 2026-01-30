@@ -46,19 +46,23 @@ html {
 
 .brand-link {
   text-decoration: none;
-  color: inherit;
+  color: #0f172a;
 }
 
 .brand-link:visited,
 .brand-link:hover,
 .brand-link:active,
 .brand-link:focus {
-  color: inherit;
+  color: #0f172a;
   text-decoration: none;
 }
 
 .brand-link .subtitle {
   color: #64748b;
+}
+
+.brand-link .title {
+  color: inherit;
 }
 
 .nav-toggle {
