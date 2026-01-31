@@ -5,18 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HiringAI · Postes</title>
-  <script>(function(){var link=document.createElement("link");link.rel="stylesheet";link.href="../assets/css/styles.css?v="+Date.now();document.head.appendChild(link);}())</script>
+  <script>(function () { var link = document.createElement("link"); link.rel = "stylesheet"; link.href = "../assets/css/styles.css?v=" + Date.now(); document.head.appendChild(link); }())</script>
 </head>
 
 <body>
   <header class="topbar">
     <a class="brand brand-link" href="../index.html">
-        <span class="logo">ATS</span>
-        <div>
-          <div class="title">HiringAI</div>
-          <div class="subtitle">Mock-up</div>
-        </div>
-      </a>
+      <span class="logo">ATS</span>
+      <div>
+        <div class="title">HiringAI</div>
+        <div class="subtitle">Mock-up</div>
+      </div>
+    </a>
     <label class="nav-toggle-label" for="nav-toggle">Menu</label>
     <nav class="topbar-actions">
       <a class="ghost button-link" href="new-job.html">Nouveau poste</a>
@@ -397,6 +397,46 @@
       </section>
     </main>
   </div>
+  <script>
+    let lastScrollY = window.scrollY;
+    let lastToggleY = window.scrollY;
+    let isHidden = false;
+    let ticking = false;
+    const mobileQuery = window.matchMedia('(max-width: 720px)');
+
+    function updateTopbarActions() {
+      const currentY = window.scrollY;
+      const delta = currentY - lastScrollY;
+      if (mobileQuery.matches) {
+        const distanceFromToggle = Math.abs(currentY - lastToggleY);
+        if (!isHidden && delta > 10 && currentY > 80 && distanceFromToggle > 60) {
+          document.body.classList.add('hide-topbar-actions');
+          isHidden = true;
+          lastToggleY = currentY;
+        } else if (isHidden && delta < -10 && distanceFromToggle > 60) {
+          document.body.classList.remove('hide-topbar-actions');
+          isHidden = false;
+          lastToggleY = currentY;
+        }
+      } else {
+        document.body.classList.remove('hide-topbar-actions');
+        isHidden = false;
+      }
+      lastScrollY = currentY;
+      ticking = false;
+    }
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateTopbarActions);
+          ticking = true;
+        }
+      },
+      { passive: true }
+    );
+  </script>
 </body>
 
 </html>

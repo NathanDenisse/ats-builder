@@ -1859,11 +1859,20 @@ summary:focus-visible,
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    max-height: 140px;
+    overflow: hidden;
+    transition: max-height 220ms ease;
   }
 
   .topbar-actions .button-link {
     width: 100%;
     justify-content: center;
+  }
+
+  body.hide-topbar-actions .topbar-actions {
+    max-height: 0;
+    pointer-events: none;
+    overflow: hidden;
   }
 
   .search-bar {

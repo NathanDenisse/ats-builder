@@ -249,6 +249,41 @@
         }
       });
     });
+
+    let lastScrollY = window.scrollY;
+    let lastToggleY = window.scrollY;
+    let isHidden = false;
+    let ticking = false;
+    const mobileQuery = window.matchMedia('(max-width: 720px)');
+
+    function updateTopbarActions() {
+      const currentY = window.scrollY;
+      const delta = currentY - lastScrollY;
+      if (mobileQuery.matches) {
+        const distanceFromToggle = Math.abs(currentY - lastToggleY);
+        if (!isHidden && delta > 10 && currentY > 80 && distanceFromToggle > 60) {
+          document.body.classList.add('hide-topbar-actions');
+          isHidden = true;
+          lastToggleY = currentY;
+        } else if (isHidden && delta < -10 && distanceFromToggle > 60) {
+          document.body.classList.remove('hide-topbar-actions');
+          isHidden = false;
+          lastToggleY = currentY;
+        }
+      } else {
+        document.body.classList.remove('hide-topbar-actions');
+        isHidden = false;
+      }
+      lastScrollY = currentY;
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateTopbarActions);
+        ticking = true;
+      }
+    }, { passive: true });
   </script>
 </body>
 

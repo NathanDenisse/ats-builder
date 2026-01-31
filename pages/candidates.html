@@ -1,551 +1,528 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HiringAI · Candidats</title>
-    <script>(function(){var link=document.createElement("link");link.rel="stylesheet";link.href="../assets/css/styles.css?v="+Date.now();document.head.appendChild(link);}())</script>
-  </head>
-  <body>
-    <header class="topbar">
-      <a class="brand brand-link" href="../index.html">
-        <span class="logo">ATS</span>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HiringAI · Candidats</title>
+  <script>(function () { var link = document.createElement("link"); link.rel = "stylesheet"; link.href = "../assets/css/styles.css?v=" + Date.now(); document.head.appendChild(link); }())</script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand brand-link" href="../index.html">
+      <span class="logo">ATS</span>
+      <div>
+        <div class="title">HiringAI</div>
+        <div class="subtitle">Mock-up</div>
+      </div>
+    </a>
+    <label class="nav-toggle-label" for="nav-toggle">Menu</label>
+    <nav class="topbar-actions">
+      <a class="ghost button-link" href="new-job.html">Nouveau poste</a>
+      <a class="primary button-link" href="new-candidate.html">Ajouter un candidat</a>
+    </nav>
+  </header>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <label class="sidebar-backdrop" for="nav-toggle"></label>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="section-title">Navigation</div>
+      <ul class="nav">
+        <li><a class="nav-link" href="../index.html">Tableau de bord</a></li>
+        <li><a class="nav-link" href="jobs.html">Postes</a></li>
+        <li><a class="nav-link active" href="candidates.html">Candidats</a></li>
+        <li><a class="nav-link" href="pipeline.html">Pipeline</a></li>
+        <li><a class="nav-link" href="interviews.html">Entretiens</a></li>
+        <li><a class="nav-link" href="messaging.html">Messagerie</a></li>
+        <li><a class="nav-link" href="reports.html">Rapports</a></li>
+        <li><a class="nav-link" href="settings.html">Paramètres</a></li>
+        <li><a class="nav-link" href="career-settings.html">Gestion Site Carrière</a></li>
+        <li>
+          <a class="nav-link" href="../career/ewigo/index.html" target="_blank" rel="noopener">
+            Ouvrir le site carrière Ewigo
+          </a>
+        </li>
+      </ul>
+      <div class="section-title">Raccourcis</div>
+      <ul class="nav">
+        <li><a class="nav-link" href="templates.html">Modèles d'email</a></li>
+        <li><a class="nav-link" href="team.html">Team & rôles</a></li>
+        <li><a class="nav-link" href="integrations.html">Intégrations</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section class="hero">
         <div>
-          <div class="title">HiringAI</div>
-          <div class="subtitle">Mock-up</div>
+          <div class="breadcrumbs">Accueil · Candidats</div>
+          <h1 class="page-title">Candidats</h1>
+          <p class="page-description">Centralisez les profils, notes et échanges.</p>
         </div>
-      </a>
-      <label class="nav-toggle-label" for="nav-toggle">Menu</label>
-      <nav class="topbar-actions">
-        <a class="ghost button-link" href="new-job.html">Nouveau poste</a>
-        <a class="primary button-link" href="new-candidate.html">Ajouter un candidat</a>
-      </nav>
-    </header>
+        <div class="quick-actions">
+          <a class="ghost button-link" href="pipeline.html">Voir pipeline</a>
+          <a class="primary button-link" href="new-candidate.html">Importer un CV</a>
+        </div>
+      </section>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-    <label class="sidebar-backdrop" for="nav-toggle"></label>
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="section-title">Navigation</div>
-        <ul class="nav">
-          <li><a class="nav-link" href="../index.html">Tableau de bord</a></li>
-          <li><a class="nav-link" href="jobs.html">Postes</a></li>
-          <li><a class="nav-link active" href="candidates.html">Candidats</a></li>
-          <li><a class="nav-link" href="pipeline.html">Pipeline</a></li>
-          <li><a class="nav-link" href="interviews.html">Entretiens</a></li>
-          <li><a class="nav-link" href="messaging.html">Messagerie</a></li>
-          <li><a class="nav-link" href="reports.html">Rapports</a></li>
-          <li><a class="nav-link" href="settings.html">Paramètres</a></li>
-          <li><a class="nav-link" href="career-settings.html">Gestion Site Carrière</a></li>
-          <li>
-            <a class="nav-link" href="../career/ewigo/index.html" target="_blank" rel="noopener">
-              Ouvrir le site carrière Ewigo
-            </a>
-          </li>
-        </ul>
-        <div class="section-title">Raccourcis</div>
-        <ul class="nav">
-          <li><a class="nav-link" href="templates.html">Modèles d'email</a></li>
-          <li><a class="nav-link" href="team.html">Team & rôles</a></li>
-          <li><a class="nav-link" href="integrations.html">Intégrations</a></li>
-        </ul>
-      </aside>
+      <section class="card-grid">
+        <article class="card clickable-card" data-segment="new" role="button" tabindex="0">
+          <div class="stat-label">Nouveaux profils</div>
+          <div class="stat-value">41</div>
+          <div class="stat-meta">7 jours</div>
+        </article>
+        <div class="segment-mobile-panel" data-segment-panel="new" aria-hidden="true"></div>
+        <article class="card clickable-card" data-segment="followup" role="button" tabindex="0">
+          <div class="stat-label">À relancer</div>
+          <div class="stat-value">12</div>
+          <div class="stat-meta">Pas de réponse</div>
+        </article>
+        <div class="segment-mobile-panel" data-segment-panel="followup" aria-hidden="true"></div>
+        <article class="card clickable-card" data-segment="interview" role="button" tabindex="0">
+          <div class="stat-label">En entretien</div>
+          <div class="stat-value">19</div>
+          <div class="stat-meta">Cette semaine</div>
+        </article>
+        <div class="segment-mobile-panel" data-segment-panel="interview" aria-hidden="true"></div>
+        <article class="card clickable-card" data-segment="offer" role="button" tabindex="0">
+          <div class="stat-label">Offre envoyée</div>
+          <div class="stat-value">6</div>
+          <div class="stat-meta">En attente</div>
+        </article>
+        <div class="segment-mobile-panel" data-segment-panel="offer" aria-hidden="true"></div>
+        <article class="card clickable-card" data-segment="hired" role="button" tabindex="0">
+          <div class="stat-label">Hired</div>
+          <div class="stat-value">4</div>
+          <div class="stat-meta">Ce trimestre</div>
+        </article>
+        <div class="segment-mobile-panel" data-segment-panel="hired" aria-hidden="true"></div>
+      </section>
 
-      <main class="content">
-        <section class="hero">
-          <div>
-            <div class="breadcrumbs">Accueil · Candidats</div>
-            <h1 class="page-title">Candidats</h1>
-            <p class="page-description">Centralisez les profils, notes et échanges.</p>
+      <section class="candidate-workspace">
+        <div class="card" data-candidate-panel>
+          <div class="card-header">
+            <h2>CV entrants</h2>
+            <span class="tag" data-count>0</span>
           </div>
-          <div class="quick-actions">
-            <a class="ghost button-link" href="pipeline.html">Voir pipeline</a>
-            <a class="primary button-link" href="new-candidate.html">Importer un CV</a>
-          </div>
-        </section>
+          <p class="muted">
+            Cliquez sur un profil pour afficher l'aperçu.
+          </p>
+          <ul class="candidate-list" data-candidate-list></ul>
+        </div>
 
-        <section class="card-grid">
-          <article
-            class="card clickable-card"
-            data-segment="new"
-            role="button"
-            tabindex="0"
-          >
-            <div class="stat-label">Nouveaux profils</div>
-            <div class="stat-value">41</div>
-            <div class="stat-meta">7 jours</div>
-          </article>
-          <div class="segment-mobile-panel" data-segment-panel="new" aria-hidden="true"></div>
-          <article
-            class="card clickable-card"
-            data-segment="followup"
-            role="button"
-            tabindex="0"
-          >
-            <div class="stat-label">À relancer</div>
-            <div class="stat-value">12</div>
-            <div class="stat-meta">Pas de réponse</div>
-          </article>
-          <div class="segment-mobile-panel" data-segment-panel="followup" aria-hidden="true"></div>
-          <article
-            class="card clickable-card"
-            data-segment="interview"
-            role="button"
-            tabindex="0"
-          >
-            <div class="stat-label">En entretien</div>
-            <div class="stat-value">19</div>
-            <div class="stat-meta">Cette semaine</div>
-          </article>
-          <div class="segment-mobile-panel" data-segment-panel="interview" aria-hidden="true"></div>
-          <article
-            class="card clickable-card"
-            data-segment="offer"
-            role="button"
-            tabindex="0"
-          >
-            <div class="stat-label">Offre envoyée</div>
-            <div class="stat-value">6</div>
-            <div class="stat-meta">En attente</div>
-          </article>
-          <div class="segment-mobile-panel" data-segment-panel="offer" aria-hidden="true"></div>
-          <article
-            class="card clickable-card"
-            data-segment="hired"
-            role="button"
-            tabindex="0"
-          >
-            <div class="stat-label">Hired</div>
-            <div class="stat-value">4</div>
-            <div class="stat-meta">Ce trimestre</div>
-          </article>
-          <div class="segment-mobile-panel" data-segment-panel="hired" aria-hidden="true"></div>
-        </section>
-
-        <section class="candidate-workspace">
-          <div class="card" data-candidate-panel>
+        <div class="candidate-panel">
+          <div class="card cv-preview">
             <div class="card-header">
-              <h2>CV entrants</h2>
-              <span class="tag" data-count>0</span>
+              <h2>Aperçu du CV</h2>
+              <a class="ghost small button-link" href="new-candidate.html">Télécharger</a>
             </div>
-            <p class="muted">
-              Cliquez sur un profil pour afficher l'aperçu.
-            </p>
-            <ul class="candidate-list" data-candidate-list></ul>
-          </div>
-
-          <div class="candidate-panel">
-            <div class="card cv-preview">
-              <div class="card-header">
-                <h2>Aperçu du CV</h2>
-                <a class="ghost small button-link" href="new-candidate.html">Télécharger</a>
+            <div class="cv-header">
+              <div>
+                <p class="cv-name" id="cv-name">Sofia Martin</p>
+                <p class="cv-role" id="cv-role">Backend Engineer · Paris</p>
               </div>
-              <div class="cv-header">
-                <div>
-                  <p class="cv-name" id="cv-name">Sofia Martin</p>
-                  <p class="cv-role" id="cv-role">Backend Engineer · Paris</p>
-                </div>
-                <div class="candidate-tags">
-                  <span class="pill" id="cv-score">Score 89</span>
-                  <span class="pill" id="cv-stage">Screening</span>
-                </div>
-              </div>
-              <div class="cv-section">
-                <h3>Résumé</h3>
-                <p class="muted" id="cv-summary">
-                  Backend solide, forte culture produit, aime les environnements rapides.
-                </p>
-              </div>
-              <div class="cv-section">
-                <h3>Expérience</h3>
-                <ul class="cv-list" id="cv-experience"></ul>
-              </div>
-              <div class="cv-section">
-                <h3>Compétences</h3>
-                <ul class="cv-list" id="cv-skills"></ul>
-              </div>
-              <div class="cv-section">
-                <h3>Formation</h3>
-                <p class="muted" id="cv-education"></p>
+              <div class="candidate-tags">
+                <span class="pill" id="cv-score">Score 89</span>
+                <span class="pill" id="cv-stage">Screening</span>
               </div>
             </div>
-
-          </div>
-        </section>
-
-        <section class="grid">
-          <div class="card">
-            <div class="card-header">
-              <h2>Insights rapides</h2>
-              <a class="ghost small button-link" href="reports.html">Exporter</a>
+            <div class="cv-section">
+              <h3>Résumé</h3>
+              <p class="muted" id="cv-summary">
+                Backend solide, forte culture produit, aime les environnements rapides.
+              </p>
             </div>
-            <div class="empty-state">
-              Les candidats ayant un score &gt; 85 répondent 2x plus vite. Ajoutez un
-              modèle d'email pour accélérer le suivi.
+            <div class="cv-section">
+              <h3>Expérience</h3>
+              <ul class="cv-list" id="cv-experience"></ul>
+            </div>
+            <div class="cv-section">
+              <h3>Compétences</h3>
+              <ul class="cv-list" id="cv-skills"></ul>
+            </div>
+            <div class="cv-section">
+              <h3>Formation</h3>
+              <p class="muted" id="cv-education"></p>
             </div>
           </div>
-        </section>
 
-        <section class="grid">
-          <div class="card">
-            <div class="card-header">
-              <h2>Ajouter un candidat</h2>
-              <a class="ghost small button-link" href="new-candidate.html">Formulaire complet</a>
-            </div>
-            <form class="form">
-              <div class="form-grid">
-                <label class="form-field">
-                  Nom complet
-                  <input type="text" placeholder="Ex: Sofia Martin" />
-                </label>
-                <label class="form-field">
-                  Poste cible
-                  <select>
-                    <option>Full Stack Engineer</option>
-                    <option>Product Designer</option>
-                    <option>Account Executive</option>
-                  </select>
-                </label>
-              </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <div class="card-header">
+            <h2>Insights rapides</h2>
+            <a class="ghost small button-link" href="reports.html">Exporter</a>
+          </div>
+          <div class="empty-state">
+            Les candidats ayant un score &gt; 85 répondent 2x plus vite. Ajoutez un
+            modèle d'email pour accélérer le suivi.
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <div class="card-header">
+            <h2>Ajouter un candidat</h2>
+            <a class="ghost small button-link" href="new-candidate.html">Formulaire complet</a>
+          </div>
+          <form class="form">
+            <div class="form-grid">
               <label class="form-field">
-                Note recruteur
-                <textarea placeholder="Résumé du profil, points forts..."></textarea>
+                Nom complet
+                <input type="text" placeholder="Ex: Sofia Martin" />
               </label>
-              <div class="form-actions">
-                <a class="primary button-link" href="candidates.html">Créer le candidat</a>
-                <a class="ghost button-link" href="pipeline.html">Envoyer au pipeline</a>
-              </div>
-            </form>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <h2>Actions rapides</h2>
-              <span class="status-chip">Aujourd'hui</span>
+              <label class="form-field">
+                Poste cible
+                <select>
+                  <option>Full Stack Engineer</option>
+                  <option>Product Designer</option>
+                  <option>Account Executive</option>
+                </select>
+              </label>
             </div>
+            <label class="form-field">
+              Note recruteur
+              <textarea placeholder="Résumé du profil, points forts..."></textarea>
+            </label>
             <div class="form-actions">
-              <a class="ghost button-link" href="messaging.html">Envoyer un message</a>
-              <a class="ghost button-link" href="interviews.html">Planifier entretien</a>
-              <a class="primary button-link" href="reports.html">Analyser la source</a>
+              <a class="primary button-link" href="candidates.html">Créer le candidat</a>
+              <a class="ghost button-link" href="pipeline.html">Envoyer au pipeline</a>
             </div>
+          </form>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2>Actions rapides</h2>
+            <span class="status-chip">Aujourd'hui</span>
           </div>
-        </section>
-      </main>
-    </div>
-    <script>
-      const candidateList = document.querySelector('[data-candidate-list]');
-      const segmentCards = Array.from(document.querySelectorAll('[data-segment]'));
-      const segmentPanels = new Map(
-        Array.from(document.querySelectorAll('[data-segment-panel]')).map((panel) => [
-          panel.dataset.segmentPanel,
-          panel,
-        ])
-      );
-      const candidatePanel = document.querySelector('[data-candidate-panel]');
-      const candidatePanelParent = candidatePanel.parentElement;
-      const candidatePanelNextSibling = candidatePanel.nextElementSibling;
-      const previewCard = document.querySelector('.cv-preview');
-      const previewHome = previewCard.parentElement;
-      let activeCandidate = null;
-      let activeSegment = null;
+          <div class="form-actions">
+            <a class="ghost button-link" href="messaging.html">Envoyer un message</a>
+            <a class="ghost button-link" href="interviews.html">Planifier entretien</a>
+            <a class="primary button-link" href="reports.html">Analyser la source</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    const candidateList = document.querySelector('[data-candidate-list]');
+    const segmentCards = Array.from(document.querySelectorAll('[data-segment]'));
+    const segmentPanels = new Map(
+      Array.from(document.querySelectorAll('[data-segment-panel]')).map((panel) => [
+        panel.dataset.segmentPanel,
+        panel,
+      ])
+    );
+    const candidatePanel = document.querySelector('[data-candidate-panel]');
+    const candidatePanelParent = candidatePanel.parentElement;
+    const candidatePanelNextSibling = candidatePanel.nextElementSibling;
+    const previewCard = document.querySelector('.cv-preview');
+    const previewHome = previewCard.parentElement;
+    let activeCandidate = null;
+    let activeSegment = null;
 
-      const preview = {
-        name: document.getElementById('cv-name'),
-        role: document.getElementById('cv-role'),
-        score: document.getElementById('cv-score'),
-        stage: document.getElementById('cv-stage'),
-        summary: document.getElementById('cv-summary'),
-        experience: document.getElementById('cv-experience'),
-        skills: document.getElementById('cv-skills'),
-        education: document.getElementById('cv-education'),
-      };
+    const preview = {
+      name: document.getElementById('cv-name'),
+      role: document.getElementById('cv-role'),
+      score: document.getElementById('cv-score'),
+      stage: document.getElementById('cv-stage'),
+      summary: document.getElementById('cv-summary'),
+      experience: document.getElementById('cv-experience'),
+      skills: document.getElementById('cv-skills'),
+      education: document.getElementById('cv-education'),
+    };
 
-      function listToHtml(value) {
-        return value
-          .split('|')
-          .map((item) => item.trim())
-          .filter(Boolean)
-          .map((item) => `<li>${item}</li>`)
-          .join('');
+    function listToHtml(value) {
+      return value
+        .split('|')
+        .map((item) => item.trim())
+        .filter(Boolean)
+        .map((item) => `<li>${item}</li>`)
+        .join('');
+    }
+
+    function isMobileView() {
+      return window.matchMedia('(max-width: 720px)').matches;
+    }
+
+    function setPreview(card) {
+      if (!card) return;
+      document.querySelectorAll('.candidate-card').forEach((item) => item.classList.remove('active'));
+      card.classList.add('active');
+
+      preview.name.textContent = card.dataset.name || '';
+      preview.role.textContent = `${card.dataset.role || ''} · ${card.dataset.location || ''}`.trim();
+      preview.score.textContent = `Score ${card.dataset.score || ''}`;
+      preview.stage.textContent = card.dataset.stage || '';
+      preview.summary.textContent = card.dataset.summary || '';
+      preview.experience.innerHTML = listToHtml(card.dataset.experience || '');
+      preview.skills.innerHTML = listToHtml(card.dataset.skills || '');
+      preview.education.textContent = card.dataset.education || '';
+    }
+
+    const candidatesBySegment = {
+      new: [
+        {
+          name: 'Sofia Martin',
+          role: 'Backend Engineer',
+          location: 'Paris',
+          score: '89',
+          stage: 'Screening',
+          summary: 'Backend solide, forte culture produit, aime les environnements rapides.',
+          experience:
+            'Lead backend chez Nova (3 ans)|API Node & PostgreSQL chez Crafty (2 ans)|Développeuse full-stack freelance (1 an)',
+          skills: 'Node.js|PostgreSQL|Architecture micro-services|GraphQL|CI/CD',
+          education: 'Master Informatique · EPITA (2018)',
+        },
+        {
+          name: 'Imran Ali',
+          role: 'Full Stack Engineer',
+          location: 'Lyon',
+          score: '84',
+          stage: 'Entretien',
+          summary: 'Polyvalent front & back, orienté performance et DX.',
+          experience: 'Tech lead chez Mobi (2 ans)|Full-stack React/Node chez Synapse (3 ans)',
+          skills: 'React|Node.js|TypeScript|AWS|CI/CD',
+          education: 'Ingénieur logiciel · INSA Lyon (2017)',
+        },
+        {
+          name: 'Chloé Bernard',
+          role: 'Sales Executive',
+          location: 'Remote',
+          score: '82',
+          stage: 'Screening',
+          summary: "Très à l'aise en prospection, forte capacité de closing.",
+          experience: 'Account Executive chez Lift (4 ans)|Business Dev chez Spark (2 ans)',
+          skills: 'Prospection|Closing|Salesforce|Pipeline management|Négociation',
+          education: 'Master Commerce · NEOMA (2016)',
+        },
+        {
+          name: 'Camille Durand',
+          role: 'Product Designer',
+          location: 'Bordeaux',
+          score: '92',
+          stage: 'Offer',
+          summary: 'Designer produit senior, très orientée data et tests utilisateurs.',
+          experience: 'Lead design chez Studio 42 (3 ans)|Product designer chez Flow (3 ans)',
+          skills: 'UX Research|Design System|Figma|Prototypage|Analytics',
+          education: 'Master UX/UI · Gobelins (2015)',
+        },
+        {
+          name: 'Aya Nakamura',
+          role: 'Account Executive',
+          location: 'Paris',
+          score: '85',
+          stage: 'Screening',
+          summary: 'Profil B2B SaaS, orientée création de pipeline.',
+          experience: 'AE chez Horizon (2 ans)|SDR chez Loop (2 ans)',
+          skills: 'Prospection|Lead qualification|CRM|Outbound|Closing',
+          education: 'Bachelor Commerce · ESCP (2018)',
+        },
+      ],
+      followup: [
+        {
+          name: 'Lucas Perrot',
+          role: 'Customer Success',
+          location: 'Nantes',
+          score: '78',
+          stage: 'Relance',
+          summary: 'A besoin de relance après 2 emails sans réponse.',
+          experience: 'CSM chez Relay (2 ans)|Support senior chez Nova (3 ans)',
+          skills: 'Onboarding|Gestion churn|Support premium|Zendesk',
+          education: 'Bachelor Relation Client · Excelia (2019)',
+        },
+        {
+          name: 'Nora Haddad',
+          role: 'Marketing Manager',
+          location: 'Paris',
+          score: '81',
+          stage: 'Relance',
+          summary: 'Bon background acquisition, pas de retour sur la prise de RDV.',
+          experience: 'Growth chez Pulse (3 ans)|Paid media chez Sparks (2 ans)',
+          skills: 'Ads|CRM|SEO|Reporting',
+          education: 'Master Marketing · KEDGE (2016)',
+        },
+        {
+          name: 'Mathieu Petit',
+          role: 'Data Analyst',
+          location: 'Lille',
+          score: '76',
+          stage: 'Relance',
+          summary: 'Profil data junior, réponses très espacées.',
+          experience: 'Data analyst chez Bloom (1 an)|Stagiaire BI chez Vertex (6 mois)',
+          skills: 'SQL|Tableau|Python|Dashboards',
+          education: 'Master Data · Lille 1 (2020)',
+        },
+      ],
+      interview: [
+        {
+          name: 'Sara Benyahia',
+          role: 'HR Business Partner',
+          location: 'Paris',
+          score: '87',
+          stage: 'Entretien',
+          summary: 'Expérience RH solide, entretien manager prévu jeudi.',
+          experience: 'HRBP chez Lumen (4 ans)|Chargée RH chez Leno (2 ans)',
+          skills: 'Relations sociales|People ops|Coaching',
+          education: 'Master RH · Paris Dauphine (2015)',
+        },
+        {
+          name: 'Julien Martin',
+          role: 'DevOps Engineer',
+          location: 'Remote',
+          score: '90',
+          stage: 'Entretien',
+          summary: 'Très bon profil infra, entretien tech en cours.',
+          experience: 'DevOps chez Flow (3 ans)|SRE chez Cloudly (2 ans)',
+          skills: 'Kubernetes|Terraform|AWS|Monitoring',
+          education: 'Ingénieur Réseau · UTBM (2014)',
+        },
+        {
+          name: 'Leïla Krief',
+          role: 'Product Manager',
+          location: 'Lyon',
+          score: '86',
+          stage: 'Entretien',
+          summary: 'PM orientée discovery, déjà 2 entretiens réalisés.',
+          experience: 'PM chez Nova (3 ans)|PO chez Lift (2 ans)',
+          skills: 'Discovery|Roadmap|UX|Analytics',
+          education: 'Master Produit · EM Lyon (2016)',
+        },
+      ],
+      offer: [
+        {
+          name: 'Claire Dubois',
+          role: 'Product Designer',
+          location: 'Paris',
+          score: '91',
+          stage: 'Offre envoyée',
+          summary: "Offre envoyée, attente de retour pour la date de signature.",
+          experience: 'Designer senior chez Lumen (4 ans)|UX chez Bright (2 ans)',
+          skills: 'UX/UI|Design System|Research|Prototypage',
+          education: 'Master Design · Strate (2014)',
+        },
+        {
+          name: 'Marco Rossi',
+          role: 'Data Engineer',
+          location: 'Remote',
+          score: '88',
+          stage: 'Offre envoyée',
+          summary: "Package envoyé, en discussion sur le variable.",
+          experience: 'Data engineer chez Axon (3 ans)|BI chez Delta (2 ans)',
+          skills: 'Python|ETL|BigQuery|Airflow',
+          education: 'Master Data · Politecnico (2015)',
+        },
+        {
+          name: 'Nina Morel',
+          role: 'Account Executive',
+          location: 'Bordeaux',
+          score: '86',
+          stage: 'Offre envoyée',
+          summary: "Offre en attente de validation interne.",
+          experience: 'AE chez Spark (3 ans)|SDR chez Halo (2 ans)',
+          skills: 'Closing|CRM|Outbound|Negotiation',
+          education: 'Master Commerce · KEDGE (2017)',
+        },
+      ],
+      hired: [
+        {
+          name: 'Hugo Lemaire',
+          role: 'Frontend Engineer',
+          location: 'Lille',
+          score: '93',
+          stage: 'Hired',
+          summary: 'Onboarding planifié, début du contrat le 12/02.',
+          experience: 'Frontend chez Loop (3 ans)|React dev chez Orbit (2 ans)',
+          skills: 'React|TypeScript|Design system|Testing',
+          education: 'Master Dev · Epitech (2016)',
+        },
+        {
+          name: 'Fatou Ndiaye',
+          role: 'Recruiter',
+          location: 'Paris',
+          score: '90',
+          stage: 'Hired',
+          summary: 'Contrat signé, préparation du kit d’arrivée.',
+          experience: 'Talent acquisition chez Nova (4 ans)|Chargée RH chez Elevate (2 ans)',
+          skills: 'Sourcing|Entretien|ATS|People ops',
+          education: 'Master RH · IAE (2015)',
+        },
+      ],
+    };
+
+    function updateCounts() {
+      const inboxBadge = candidateList.closest('.card')?.querySelector('[data-count]');
+      if (inboxBadge) {
+        inboxBadge.textContent = candidateList.querySelectorAll('.candidate-card').length;
       }
+    }
 
-      function isMobileView() {
-        return window.matchMedia('(max-width: 720px)').matches;
-      }
-
-      function setPreview(card) {
-        if (!card) return;
-        document.querySelectorAll('.candidate-card').forEach((item) => item.classList.remove('active'));
-        card.classList.add('active');
-
-        preview.name.textContent = card.dataset.name || '';
-        preview.role.textContent = `${card.dataset.role || ''} · ${card.dataset.location || ''}`.trim();
-        preview.score.textContent = `Score ${card.dataset.score || ''}`;
-        preview.stage.textContent = card.dataset.stage || '';
-        preview.summary.textContent = card.dataset.summary || '';
-        preview.experience.innerHTML = listToHtml(card.dataset.experience || '');
-        preview.skills.innerHTML = listToHtml(card.dataset.skills || '');
-        preview.education.textContent = card.dataset.education || '';
-      }
-
-      const candidatesBySegment = {
-        new: [
-          {
-            name: 'Sofia Martin',
-            role: 'Backend Engineer',
-            location: 'Paris',
-            score: '89',
-            stage: 'Screening',
-            summary: 'Backend solide, forte culture produit, aime les environnements rapides.',
-            experience:
-              'Lead backend chez Nova (3 ans)|API Node & PostgreSQL chez Crafty (2 ans)|Développeuse full-stack freelance (1 an)',
-            skills: 'Node.js|PostgreSQL|Architecture micro-services|GraphQL|CI/CD',
-            education: 'Master Informatique · EPITA (2018)',
-          },
-          {
-            name: 'Imran Ali',
-            role: 'Full Stack Engineer',
-            location: 'Lyon',
-            score: '84',
-            stage: 'Entretien',
-            summary: 'Polyvalent front & back, orienté performance et DX.',
-            experience: 'Tech lead chez Mobi (2 ans)|Full-stack React/Node chez Synapse (3 ans)',
-            skills: 'React|Node.js|TypeScript|AWS|CI/CD',
-            education: 'Ingénieur logiciel · INSA Lyon (2017)',
-          },
-          {
-            name: 'Chloé Bernard',
-            role: 'Sales Executive',
-            location: 'Remote',
-            score: '82',
-            stage: 'Screening',
-            summary: "Très à l'aise en prospection, forte capacité de closing.",
-            experience: 'Account Executive chez Lift (4 ans)|Business Dev chez Spark (2 ans)',
-            skills: 'Prospection|Closing|Salesforce|Pipeline management|Négociation',
-            education: 'Master Commerce · NEOMA (2016)',
-          },
-          {
-            name: 'Camille Durand',
-            role: 'Product Designer',
-            location: 'Bordeaux',
-            score: '92',
-            stage: 'Offer',
-            summary: 'Designer produit senior, très orientée data et tests utilisateurs.',
-            experience: 'Lead design chez Studio 42 (3 ans)|Product designer chez Flow (3 ans)',
-            skills: 'UX Research|Design System|Figma|Prototypage|Analytics',
-            education: 'Master UX/UI · Gobelins (2015)',
-          },
-          {
-            name: 'Aya Nakamura',
-            role: 'Account Executive',
-            location: 'Paris',
-            score: '85',
-            stage: 'Screening',
-            summary: 'Profil B2B SaaS, orientée création de pipeline.',
-            experience: 'AE chez Horizon (2 ans)|SDR chez Loop (2 ans)',
-            skills: 'Prospection|Lead qualification|CRM|Outbound|Closing',
-            education: 'Bachelor Commerce · ESCP (2018)',
-          },
-        ],
-        followup: [
-          {
-            name: 'Lucas Perrot',
-            role: 'Customer Success',
-            location: 'Nantes',
-            score: '78',
-            stage: 'Relance',
-            summary: 'A besoin de relance après 2 emails sans réponse.',
-            experience: 'CSM chez Relay (2 ans)|Support senior chez Nova (3 ans)',
-            skills: 'Onboarding|Gestion churn|Support premium|Zendesk',
-            education: 'Bachelor Relation Client · Excelia (2019)',
-          },
-          {
-            name: 'Nora Haddad',
-            role: 'Marketing Manager',
-            location: 'Paris',
-            score: '81',
-            stage: 'Relance',
-            summary: 'Bon background acquisition, pas de retour sur la prise de RDV.',
-            experience: 'Growth chez Pulse (3 ans)|Paid media chez Sparks (2 ans)',
-            skills: 'Ads|CRM|SEO|Reporting',
-            education: 'Master Marketing · KEDGE (2016)',
-          },
-          {
-            name: 'Mathieu Petit',
-            role: 'Data Analyst',
-            location: 'Lille',
-            score: '76',
-            stage: 'Relance',
-            summary: 'Profil data junior, réponses très espacées.',
-            experience: 'Data analyst chez Bloom (1 an)|Stagiaire BI chez Vertex (6 mois)',
-            skills: 'SQL|Tableau|Python|Dashboards',
-            education: 'Master Data · Lille 1 (2020)',
-          },
-        ],
-        interview: [
-          {
-            name: 'Sara Benyahia',
-            role: 'HR Business Partner',
-            location: 'Paris',
-            score: '87',
-            stage: 'Entretien',
-            summary: 'Expérience RH solide, entretien manager prévu jeudi.',
-            experience: 'HRBP chez Lumen (4 ans)|Chargée RH chez Leno (2 ans)',
-            skills: 'Relations sociales|People ops|Coaching',
-            education: 'Master RH · Paris Dauphine (2015)',
-          },
-          {
-            name: 'Julien Martin',
-            role: 'DevOps Engineer',
-            location: 'Remote',
-            score: '90',
-            stage: 'Entretien',
-            summary: 'Très bon profil infra, entretien tech en cours.',
-            experience: 'DevOps chez Flow (3 ans)|SRE chez Cloudly (2 ans)',
-            skills: 'Kubernetes|Terraform|AWS|Monitoring',
-            education: 'Ingénieur Réseau · UTBM (2014)',
-          },
-          {
-            name: 'Leïla Krief',
-            role: 'Product Manager',
-            location: 'Lyon',
-            score: '86',
-            stage: 'Entretien',
-            summary: 'PM orientée discovery, déjà 2 entretiens réalisés.',
-            experience: 'PM chez Nova (3 ans)|PO chez Lift (2 ans)',
-            skills: 'Discovery|Roadmap|UX|Analytics',
-            education: 'Master Produit · EM Lyon (2016)',
-          },
-        ],
-        offer: [
-          {
-            name: 'Claire Dubois',
-            role: 'Product Designer',
-            location: 'Paris',
-            score: '91',
-            stage: 'Offre envoyée',
-            summary: "Offre envoyée, attente de retour pour la date de signature.",
-            experience: 'Designer senior chez Lumen (4 ans)|UX chez Bright (2 ans)',
-            skills: 'UX/UI|Design System|Research|Prototypage',
-            education: 'Master Design · Strate (2014)',
-          },
-          {
-            name: 'Marco Rossi',
-            role: 'Data Engineer',
-            location: 'Remote',
-            score: '88',
-            stage: 'Offre envoyée',
-            summary: "Package envoyé, en discussion sur le variable.",
-            experience: 'Data engineer chez Axon (3 ans)|BI chez Delta (2 ans)',
-            skills: 'Python|ETL|BigQuery|Airflow',
-            education: 'Master Data · Politecnico (2015)',
-          },
-          {
-            name: 'Nina Morel',
-            role: 'Account Executive',
-            location: 'Bordeaux',
-            score: '86',
-            stage: 'Offre envoyée',
-            summary: "Offre en attente de validation interne.",
-            experience: 'AE chez Spark (3 ans)|SDR chez Halo (2 ans)',
-            skills: 'Closing|CRM|Outbound|Negotiation',
-            education: 'Master Commerce · KEDGE (2017)',
-          },
-        ],
-        hired: [
-          {
-            name: 'Hugo Lemaire',
-            role: 'Frontend Engineer',
-            location: 'Lille',
-            score: '93',
-            stage: 'Hired',
-            summary: 'Onboarding planifié, début du contrat le 12/02.',
-            experience: 'Frontend chez Loop (3 ans)|React dev chez Orbit (2 ans)',
-            skills: 'React|TypeScript|Design system|Testing',
-            education: 'Master Dev · Epitech (2016)',
-          },
-          {
-            name: 'Fatou Ndiaye',
-            role: 'Recruiter',
-            location: 'Paris',
-            score: '90',
-            stage: 'Hired',
-            summary: 'Contrat signé, préparation du kit d’arrivée.',
-            experience: 'Talent acquisition chez Nova (4 ans)|Chargée RH chez Elevate (2 ans)',
-            skills: 'Sourcing|Entretien|ATS|People ops',
-            education: 'Master RH · IAE (2015)',
-          },
-        ],
-      };
-
-      function updateCounts() {
-        const inboxBadge = candidateList.closest('.card')?.querySelector('[data-count]');
-        if (inboxBadge) {
-          inboxBadge.textContent = candidateList.querySelectorAll('.candidate-card').length;
+    function closeMobilePreviews() {
+      const panels = Array.from(candidateList.querySelectorAll('.cv-mobile-panel'));
+      panels.forEach((panel) => {
+        if (panel.contains(previewCard)) {
+          previewHome.appendChild(previewCard);
         }
-      }
+        panel.classList.remove('is-open');
+        panel.setAttribute('aria-hidden', 'true');
+        panel.innerHTML = '';
+      });
+      document.querySelectorAll('.candidate-card').forEach((item) => item.classList.remove('active'));
+      activeCandidate = null;
+    }
 
-      function closeMobilePreviews() {
-        const panels = Array.from(candidateList.querySelectorAll('.cv-mobile-panel'));
-        panels.forEach((panel) => {
-          if (panel.contains(previewCard)) {
-            previewHome.appendChild(previewCard);
-          }
-          panel.classList.remove('is-open');
-          panel.setAttribute('aria-hidden', 'true');
-          panel.innerHTML = '';
-        });
-        document.querySelectorAll('.candidate-card').forEach((item) => item.classList.remove('active'));
-        activeCandidate = null;
-      }
+    function toggleMobilePreview(card) {
+      const panel = card.nextElementSibling;
+      if (!panel || !panel.classList.contains('cv-mobile-panel')) return;
 
-      function toggleMobilePreview(card) {
-        const panel = card.nextElementSibling;
-        if (!panel || !panel.classList.contains('cv-mobile-panel')) return;
-
-        if (activeCandidate === card) {
-          closeMobilePreviews();
-          return;
-        }
-
+      if (activeCandidate === card) {
         closeMobilePreviews();
-        setPreview(card);
-        panel.appendChild(previewCard);
+        return;
+      }
+
+      closeMobilePreviews();
+      setPreview(card);
+      panel.appendChild(previewCard);
+      panel.classList.add('is-open');
+      panel.setAttribute('aria-hidden', 'false');
+      activeCandidate = card;
+    }
+
+    function movePanelHome() {
+      if (!candidatePanelParent.contains(candidatePanel)) {
+        candidatePanelParent.insertBefore(candidatePanel, candidatePanelNextSibling);
+      }
+      segmentPanels.forEach((panel) => {
+        panel.classList.remove('is-open');
+        panel.setAttribute('aria-hidden', 'true');
+        panel.innerHTML = '';
+      });
+    }
+
+    function showPanelForSegment(segment) {
+      segmentPanels.forEach((panel) => {
+        panel.classList.remove('is-open');
+        panel.setAttribute('aria-hidden', 'true');
+        panel.innerHTML = '';
+      });
+      const panel = segmentPanels.get(segment);
+      if (panel) {
         panel.classList.add('is-open');
         panel.setAttribute('aria-hidden', 'false');
-        activeCandidate = card;
+        panel.appendChild(candidatePanel);
       }
+    }
 
-      function movePanelHome() {
-        if (!candidatePanelParent.contains(candidatePanel)) {
-          candidatePanelParent.insertBefore(candidatePanel, candidatePanelNextSibling);
-        }
-        segmentPanels.forEach((panel) => {
-          panel.classList.remove('is-open');
-          panel.setAttribute('aria-hidden', 'true');
-          panel.innerHTML = '';
-        });
-      }
-
-      function showPanelForSegment(segment) {
-        segmentPanels.forEach((panel) => {
-          panel.classList.remove('is-open');
-          panel.setAttribute('aria-hidden', 'true');
-          panel.innerHTML = '';
-        });
-        const panel = segmentPanels.get(segment);
-        if (panel) {
-          panel.classList.add('is-open');
-          panel.setAttribute('aria-hidden', 'false');
-          panel.appendChild(candidatePanel);
-        }
-      }
-
-      function renderCandidates(segment) {
-        const data = candidatesBySegment[segment] || [];
-        candidateList.innerHTML = data
-          .map(
-            (candidate, index) => `
+    function renderCandidates(segment) {
+      const data = candidatesBySegment[segment] || [];
+      candidateList.innerHTML = data
+        .map(
+          (candidate, index) => `
             <li
               class="candidate-card"
               data-candidate-id="${index}"
@@ -568,78 +545,117 @@
             </li>
             <li class="cv-mobile-panel" data-cv-panel="${index}" aria-hidden="true"></li>
           `
-          )
-          .join('');
+        )
+        .join('');
 
-        const cards = Array.from(candidateList.querySelectorAll('.candidate-card'));
-        cards.forEach((card) =>
-          card.addEventListener('click', () => {
-            if (isMobileView()) {
-              toggleMobilePreview(card);
-              return;
-            }
-            setPreview(card);
-          })
-        );
-        if (!isMobileView() && cards[0]) {
-          setPreview(cards[0]);
-        } else {
-          closeMobilePreviews();
-        }
-        updateCounts();
-      }
-
-      function setActiveSegment(segment, options = {}) {
-        const shouldToggle = options.toggle === true;
-        const mobile = isMobileView();
-
-        if (mobile && shouldToggle && activeSegment === segment) {
-          activeSegment = null;
-          segmentCards.forEach((card) => card.classList.remove('active'));
-          movePanelHome();
-          closeMobilePreviews();
-          return;
-        }
-
-        activeSegment = segment;
-        segmentCards.forEach((card) => card.classList.remove('active'));
-        const activeCard = segmentCards.find((card) => card.dataset.segment === segment);
-        if (activeCard) {
-          activeCard.classList.add('active');
-        }
-        renderCandidates(segment);
-        if (mobile) {
-          showPanelForSegment(segment);
-        } else {
-          movePanelHome();
-          closeMobilePreviews();
-        }
-      }
-
-      segmentCards.forEach((card) => {
-        card.addEventListener('click', () => setActiveSegment(card.dataset.segment, { toggle: true }));
-        card.addEventListener('keydown', (event) => {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            setActiveSegment(card.dataset.segment, { toggle: true });
+      const cards = Array.from(candidateList.querySelectorAll('.candidate-card'));
+      cards.forEach((card) =>
+        card.addEventListener('click', () => {
+          if (isMobileView()) {
+            toggleMobilePreview(card);
+            return;
           }
-        });
-      });
-
-      candidateList.innerHTML = '';
+          setPreview(card);
+        })
+      );
+      if (!isMobileView() && cards[0]) {
+        setPreview(cards[0]);
+      } else {
+        closeMobilePreviews();
+      }
       updateCounts();
+    }
 
-      window.matchMedia('(max-width: 720px)').addEventListener('change', (event) => {
-        if (event.matches) {
-          if (activeSegment) {
-            showPanelForSegment(activeSegment);
-          }
-        } else {
-          movePanelHome();
-          closeMobilePreviews();
+    function setActiveSegment(segment, options = {}) {
+      const shouldToggle = options.toggle === true;
+      const mobile = isMobileView();
+
+      if (mobile && shouldToggle && activeSegment === segment) {
+        activeSegment = null;
+        segmentCards.forEach((card) => card.classList.remove('active'));
+        movePanelHome();
+        closeMobilePreviews();
+        return;
+      }
+
+      activeSegment = segment;
+      segmentCards.forEach((card) => card.classList.remove('active'));
+      const activeCard = segmentCards.find((card) => card.dataset.segment === segment);
+      if (activeCard) {
+        activeCard.classList.add('active');
+      }
+      renderCandidates(segment);
+      if (mobile) {
+        showPanelForSegment(segment);
+      } else {
+        movePanelHome();
+        closeMobilePreviews();
+      }
+    }
+
+    segmentCards.forEach((card) => {
+      card.addEventListener('click', () => setActiveSegment(card.dataset.segment, { toggle: true }));
+      card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          setActiveSegment(card.dataset.segment, { toggle: true });
         }
       });
-    </script>
-  </body>
-</html>
+    });
 
+    candidateList.innerHTML = '';
+    updateCounts();
+
+    window.matchMedia('(max-width: 720px)').addEventListener('change', (event) => {
+      if (event.matches) {
+        if (activeSegment) {
+          showPanelForSegment(activeSegment);
+        }
+      } else {
+        movePanelHome();
+        closeMobilePreviews();
+      }
+    });
+
+    let lastScrollY = window.scrollY;
+    let lastToggleY = window.scrollY;
+    let isHidden = false;
+    let ticking = false;
+    const mobileQuery = window.matchMedia('(max-width: 720px)');
+
+    function updateTopbarActions() {
+      const currentY = window.scrollY;
+      const delta = currentY - lastScrollY;
+      if (mobileQuery.matches) {
+        const distanceFromToggle = Math.abs(currentY - lastToggleY);
+        if (!isHidden && delta > 10 && currentY > 80 && distanceFromToggle > 60) {
+          document.body.classList.add('hide-topbar-actions');
+          isHidden = true;
+          lastToggleY = currentY;
+        } else if (isHidden && delta < -10 && distanceFromToggle > 60) {
+          document.body.classList.remove('hide-topbar-actions');
+          isHidden = false;
+          lastToggleY = currentY;
+        }
+      } else {
+        document.body.classList.remove('hide-topbar-actions');
+        isHidden = false;
+      }
+      lastScrollY = currentY;
+      ticking = false;
+    }
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateTopbarActions);
+          ticking = true;
+        }
+      },
+      { passive: true }
+    );
+  </script>
+</body>
+
+</html>
