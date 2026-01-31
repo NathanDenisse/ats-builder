@@ -156,6 +156,7 @@ button {
   grid-template-columns: 240px 1fr;
   min-height: calc(100vh - 74px);
   overflow-x: hidden;
+  align-items: start;
 }
 
 .sidebar {
@@ -205,6 +206,7 @@ button {
   display: grid;
   gap: 24px;
   min-width: 0;
+  align-content: start;
 }
 
 .hero {
@@ -1551,15 +1553,14 @@ summary:focus-visible,
 @media (max-width: 960px) {
   .layout {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .sidebar {
     border-right: none;
     border-bottom: 1px solid #e2e8f0;
   }
-}
 
-@media (max-width: 820px) {
   .nav-toggle-label {
     display: inline-flex;
     align-items: center;
