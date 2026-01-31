@@ -163,6 +163,8 @@ button {
   padding: 24px;
   background: #ffffff;
   border-right: 1px solid #e2e8f0;
+  overflow-y: auto;
+  max-height: 100vh;
 }
 
 .section-title {
