@@ -1829,7 +1829,14 @@ summary:focus-visible,
 
   .topbar-actions {
     width: 100%;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .topbar-actions .button-link {
+    width: 100%;
+    justify-content: center;
   }
 
   .search-bar {
