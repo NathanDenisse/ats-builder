@@ -1,15 +1,44 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import LandingNavbar from "./components/LandingNavbar";
 import { useLang } from "./lib/LangContext";
 
-const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" as const, delay },
-});
+/* ─── Animation helpers ─── */
+
+function useMounted() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  return mounted;
+}
+
+function FadeUp({
+  children,
+  delay = 0,
+  className,
+}: {
+  children: React.ReactNode;
+  delay?: number;
+  className?: string;
+}) {
+  const mounted = useMounted();
+
+  if (!mounted) {
+    return <div className={className}>{children}</div>;
+  }
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut", delay }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 function AnimateOnScroll({
   children,
@@ -22,6 +51,15 @@ function AnimateOnScroll({
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const mounted = useMounted();
+
+  if (!mounted) {
+    return (
+      <div ref={ref} className={className}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div
@@ -43,50 +81,47 @@ function HeroSection() {
   return (
     <section className="pt-40 pb-16 px-6">
       <div className="max-w-4xl mx-auto text-center">
-        <motion.div {...fadeUp(0.2)}>
+        <FadeUp delay={0.2}>
           <span className="bg-blue-50 text-blue-600 px-4 py-1.5 rounded-full text-sm font-semibold inline-flex items-center gap-2">
             <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
             {t.badge}
           </span>
-        </motion.div>
+        </FadeUp>
 
-        <motion.h1
-          {...fadeUp(0.35)}
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mt-8"
-        >
-          {t.heroTitle1}
-          <br />
-          <span className="italic bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
-            {t.heroTitle2}
-          </span>
-        </motion.h1>
+        <FadeUp delay={0.35}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mt-8">
+            {t.heroTitle1}
+            <br />
+            <span className="italic bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+              {t.heroTitle2}
+            </span>
+          </h1>
+        </FadeUp>
 
-        <motion.p
-          {...fadeUp(0.5)}
-          className="text-base md:text-lg text-gray-500 max-w-xl mx-auto mt-6"
-        >
-          {t.heroSub}
-        </motion.p>
+        <FadeUp delay={0.5}>
+          <p className="text-base md:text-lg text-gray-500 max-w-xl mx-auto mt-6">
+            {t.heroSub}
+          </p>
+        </FadeUp>
 
-        <motion.div
-          {...fadeUp(0.65)}
-          className="flex flex-col sm:flex-row justify-center gap-4 mt-10"
-        >
-          <a
-            href="https://calendly.com/REMPLACER/demo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
-          >
-            {t.ctaDemo}
-          </a>
-          <a
-            href="#features"
-            className="bg-white border border-gray-200 text-gray-700 hover:border-gray-400 px-6 py-3 rounded-lg font-semibold transition"
-          >
-            {t.ctaDiscover}
-          </a>
-        </motion.div>
+        <FadeUp delay={0.65}>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+            <a
+              href="https://calendly.com/REMPLACER/demo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
+            >
+              {t.ctaDemo}
+            </a>
+            <a
+              href="#features"
+              className="bg-white border border-gray-200 text-gray-700 hover:border-gray-400 px-6 py-3 rounded-lg font-semibold transition"
+            >
+              {t.ctaDiscover}
+            </a>
+          </div>
+        </FadeUp>
       </div>
     </section>
   );
@@ -122,11 +157,7 @@ function MockupSection() {
   ];
 
   return (
-    <motion.div
-      {...fadeUp(0.8)}
-      transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
-      className="mt-20 max-w-5xl mx-auto px-6"
-    >
+    <FadeUp delay={0.8} className="mt-20 max-w-5xl mx-auto px-6">
       <div className="rounded-xl border border-gray-200 shadow-xl overflow-hidden bg-white">
         {/* Window chrome */}
         <div className="bg-gray-50 border-b border-gray-100 px-4 py-3 flex items-center gap-2">
@@ -172,7 +203,7 @@ function MockupSection() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </FadeUp>
   );
 }
 
